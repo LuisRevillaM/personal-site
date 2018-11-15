@@ -1,32 +1,150 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 21px;
+    color: #000;
+height: 200%;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.Senior {
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Left { background-color: #343175; width: 200px;position: relative;
+z-index: 5;}
+
+
+.Middle {
+  flex-grow: 2;
+  background-color: #186D83;
 }
+
+
+.Right { background-color: #1E8D9E;  width: 200px;
+position: relative;
+z-index: 5;}
+
+
+.Top {
+  background-color: #000;
+  height: 30px;
+  z-index: 250;
+  width: 100%;
+  position: absolute;
+  top:0;
+}
+
+.F1 {
+  position: absolute;
+  background-color: #343175;
+  width: 1000px;
+  height: 100px;
+  right: 200px;
+  top: -65px;
+  z-index:7;
+  transform: skewY(10deg);
+
+}
+
+.F2 {
+  height: 310px;
+  background-color:  #343175;
+  position: absolute;
+
+  width: 100%;
+  bottom: 0;
+  transform: skewY(12deg);
+  z-index: 4;
+  margin-bottom: -100px;
+;
+
+}
+.F3 {
+  height: 260px;
+  background-color:  #CD1F56;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  margin-bottom: -100px;
+;
+  z-index: 4;
+
+    transform: skewY(12deg);
+}
+.F4 {
+  height: 60px;
+  background-color:  #F06424;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 4;
+
+  margin-bottom: -100px;
+;
+
+    transform: skewY(12deg);
+}
+
+.F5 {
+
+  position: absolute;
+  bottom: 0;
+background-color:  #D7D456;
+  width: 100%;
+  height: 311px;
+
+margin-bottom: -256px;
+  z-index: 3;
+
+}
+
+.MainText {
+  position: absolute;
+  right: 340px;
+  top: 190px;
+  color: black;
+  text-align: right;
+}
+
+.IntroText {
+
+    position: absolute;
+    top: 350px;
+    left: 500px;
+}
+
+.Title {
+  font-size: 45px;
+  margin: 0px;
+}
+
+.SubTitle {
+  font-size: 32px;
+  margin: 14px 0px;
+}
+
+
+
+    .triangle-bottomleft {
+      position: absolute;
+      top: 115px;
+      left: 200px;
+      width: 0;
+      height: 0;
+      border-bottom: 140px solid #F06424;
+      border-right: 530px solid transparent;
+      transform: skewY(2deg);
+    }
+
+
+    .triangle-bottomright {
+      position: absolute;
+      top: 460px;
+      right: 200px;
+      width: 0;
+      height: 0;
+      border-bottom: 70px solid #E0962C;
+      border-left: 280px solid transparent;
+        transform: skewY(12deg);
+    }
