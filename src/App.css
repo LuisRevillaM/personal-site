@@ -112,15 +112,21 @@ margin-bottom: -256px;
     position: absolute;
     top: 350px;
     left: 500px;
+    font-style: italic;
 }
 
 .Title {
-  font-size: 45px;
+  font-size: 57px;
   margin: 0px;
+  font-style: italic;
+
+
 }
 
 .SubTitle {
-  font-size: 32px;
+  font-size: 39px;
+  font-style: italic;
+
   margin: 14px 0px;
 }
 
