@@ -4,29 +4,5 @@
     "branch": "some",
     "remote": "someUrl",
     "commit": "A commit message"
-  },
-  {
-    "project": "Testasasss",
-    "branch": "some sdsd",
-    "remote": "someUrsl",
-    "commit": "another ahahaha"
-  },
-  {
-    "project": "Implementing a virtual DOM",
-    "branch": "lo que sea",
-    "commit": "Cambio de prueba",
-    "remote": "https://wwww.tuputamadre.com"
-  },
-  {
-    "project": "",
-    "branch": "lo que sea",
-    "commit": "Nuevo diseno en el carrusel",
-    "remote": ""
-  },
-  {
-    "project": "Website for Shoestore Arza",
-    "branch": "lo que sea",
-    "commit": "Nuevo diseno en el carrusel",
-    "remote": "https://github.com"
   }
 ]
