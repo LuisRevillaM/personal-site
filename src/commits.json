@@ -4,5 +4,11 @@
     "branch": "first-version",
     "commit": "clean json",
     "remote": "https://github.com/luisrevillam/personal-site.git"
+  },
+  {
+    "project": "Personal website",
+    "branch": "first-version",
+    "commit": "Remote field on CommitBlock",
+    "remote": "https://github.com/luisrevillam/personal-site.git"
   }
 ]

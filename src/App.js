@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {commits.map(com => {
+        {commits.reverse().map(com => {
           return (
             <div className="Commit">
               <h1>Project: {com.project}</h1>
