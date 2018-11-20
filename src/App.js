@@ -23,7 +23,7 @@ class App extends Component {
 
 <div className="Right"> </div>
 
-<div className="MainText"><h1 className="Title">Luis Revilla</h1><h2 className="SubTitle">Software Engineer</h2> </div>
+<div className="MainText"><h1 className="Title">Luis Revilla</h1><div className="SubTitle">Software Engineer based in New York</div><div className="SubTitle"> +3 years of JavaScript experience</div> </div>
 
 
 

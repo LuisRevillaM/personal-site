@@ -124,9 +124,9 @@ margin-bottom: -256px;
 }
 
 .SubTitle {
-  font-size: 39px;
+  font-size: 30px;
   font-style: italic;
-
+font-weight: bold;
   margin: 14px 0px;
 }
 
