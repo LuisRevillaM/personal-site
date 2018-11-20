@@ -12,6 +12,7 @@ class App extends Component {
               <h1>Project: {com.project}</h1>
               <h2>On branch: {com.branch}</h2>
               <h2> Commit: {com.commit}</h2>
+              <h2> Remote: {com.remote} </h2>
             </div>
           );
         })}

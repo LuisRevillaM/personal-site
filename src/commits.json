@@ -16,5 +16,17 @@
     "branch": "lo que sea",
     "commit": "New json entry",
     "remote": "https://github.com/luisrevillam/personal-site.git"
+  },
+  {
+    "project": "Personal website",
+    "branch": "lo que sea",
+    "commit": "another commit to test",
+    "remote": "https://github.com/luisrevillam/personal-site.git"
+  },
+  {
+    "project": "Website for Shoestore Arza",
+    "branch": "lo que sea",
+    "commit": "Nuevo copy para la zapateria",
+    "remote": "https://github.com"
   }
 ]
