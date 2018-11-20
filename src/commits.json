@@ -10,5 +10,11 @@
     "branch": "lo que sea",
     "commit": "clean json",
     "remote": "https://github.com/luisrevillam/personal-site.git"
+  },
+  {
+    "project": "Personal website",
+    "branch": "lo que sea",
+    "commit": "New json entry",
+    "remote": "https://github.com/luisrevillam/personal-site.git"
   }
 ]
