@@ -1,5 +1,24 @@
 .Commit {
-  border: solid 1px blue;
+  border: solid 8px red;
   border-radius: 80;
   margin: 20px;
+}
+
+
+.app-parent {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+
+.feature-card {
+  height: 60vh;
+  width: 80%;
+  border-radius: 40px;
+  box-shadow: 12px 12px 2px 1px #7F878F;
+  background-color: #F8F9FA;
+  z-index: 5000;
+  position: relative;
 }
