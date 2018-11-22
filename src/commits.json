@@ -10,5 +10,17 @@
     "branch": "first-version",
     "commit": "I love you baby",
     "remote": "https://github.com/luisrevillam/personal-site.git"
+  },
+  {
+    "project": "Personal website",
+    "branch": "i-love-you-branch",
+    "commit": "I love you again from another branch",
+    "remote": "https://github.com/luisrevillam/personal-site.git"
+  },
+  {
+    "project": "Website for Shoestore Arza",
+    "branch": "test-branch",
+    "commit": "I love you from another projectgit add .",
+    "remote": "https://github.com"
   }
 ]

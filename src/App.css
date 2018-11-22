@@ -4,7 +4,22 @@
   margin: 20px;
 }
 
+.welcome {
+  margin-top: 10%;
+  color: #373D42;
+  width: 100%;
+  padding-left: 10%;
+}
 
+.feature-block {
+  width: 100%;
+  padding: 30px 10%;
+}
+
+.feature {
+  padding-top: 10px;
+
+}
 .app-parent {
   display: flex;
   flex-wrap: wrap;
