@@ -54,6 +54,14 @@ background-color: #CD1F56;
 
   width: 100%;
 }
+
+.color-bg3 {
+  background-color: #F06424;
+  height: 45px;
+  transform: skewY(-10deg) translateY(100px);
+
+  width: 100%;
+}
 .welcome {
 z-index: 2;
   padding: 10% 0 0 10%;
