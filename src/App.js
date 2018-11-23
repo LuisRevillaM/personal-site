@@ -7,9 +7,9 @@ class App extends Component {
     return (
       <div className="app-parent">
 
-      <div className="color-bg0"></div>
-      <div className="color-bg"></div>
-        <div className="welcome">
+      <div className="black"></div>
+      <div className="first"></div>
+        <div className="second">
           <div className="name">Luis Revilla</div>
           <div className="intro-text">Fullstack developer based in Manhattan.</div>
           <div className="oranje"></div>
@@ -19,6 +19,8 @@ class App extends Component {
 
         <div className="color-bg3"></div>
         <div className="color-bg4"></div>
+        <div className="color-bg5"></div>
+
 
 
         <div className="feature-block">
@@ -36,6 +38,12 @@ class App extends Component {
 
             <div className="feature">Focus on <span>testing and performance</span>.</div>
             <div className="feature">Extraordinary <span>communication skills</span>. Background in journalism, broadcasting and advertising.</div>
+
+        </div>
+
+        <div className="grid">
+          <div className="element"></div>
+
 
         </div>
 
