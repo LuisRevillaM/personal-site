@@ -1,9 +1,10 @@
-[
-  {
-    "project": "Personal website",
-    "branch": "first-version",
-    "commit": "clean json with commits",
-    "remote": "https://github.com/luisrevillam/personal-site.git",
-    "date": "2018-11-22 08:59:38"
-  }
-]
+[ { project: 'Personal website',
+    branch: 'first-version',
+    commit: 'clean json with commits',
+    remote: 'https://github.com/luisrevillam/personal-site.git',
+    date: '2018-11-22 08:59:38' },
+  { project: 'Personal website',
+    branch: 'grid-based',
+    commit: 'Testing middle step to extract last 20 commits',
+    remote: 'https://github.com/luisrevillam/personal-site.git',
+    date: '2018-11-26 15:36:28' } ]
