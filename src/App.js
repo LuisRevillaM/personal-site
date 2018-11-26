@@ -6,25 +6,12 @@ class App extends Component {
   render() {
     return (
       <div className="app-parent">
-
-      <div className="black"></div>
-      <div className="first"></div>
-        <div className="second">
+      
+        <div className="welcome">
           <div className="name">Luis Revilla</div>
           <div className="intro-text">Fullstack developer based in Manhattan.</div>
-          <div className="oranje"></div>
-
         </div>
-        <div className="color-bg2"></div>
-
-        <div className="color-bg3"></div>
-        <div className="color-bg4"></div>
-        <div className="color-bg5"></div>
-
-
-
         <div className="feature-block">
-
         <div className="feature">Author of code running on <span>thousands of devices</span>.</div>
           <div className="feature">
             <span>3+ years</span> writing <span>Javascript</span>, both for the <span>web and Node.js</span> programs.
@@ -38,12 +25,6 @@ class App extends Component {
 
             <div className="feature">Focus on <span>testing and performance</span>.</div>
             <div className="feature">Extraordinary <span>communication skills</span>. Background in journalism, broadcasting and advertising.</div>
-
-        </div>
-
-        <div className="grid">
-          <div className="element"></div>
-
 
         </div>
 

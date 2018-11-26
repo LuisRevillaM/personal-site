@@ -6,88 +6,50 @@
   color: #4b5158;
 }
 
-.black {
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  height: 34px;
-  width: 100%;
-  background-color: #000;
-}
-
-.first {
-  position: absolute;
-  top: 10;
-  z-index: -1;
-  height: 200px;
-  width: 100%;
-  background-color:#1e8d9e;
-}
-
 /*D7D456;*/
-
-.color-bg2 {
-  transform: skewY(-10deg) translateY(-40px);
-  position: absolute;
-  top: 210px;
-  z-index: -0.5;
-  height: 200px;
-  width: 100%;
-  background-color: #cd1f56;
-}
-.oranje {
-  background-color: #343175;
-  height: 45px;
-  width: 100%;
-}
-
-.color-bg3 {
-  background-color: #f06424;
-  height: 45px;
-  transform: skewY(-10deg) translateY(100px);
-
-  width: 100%;
-}
 
 .grid {
   display: grid;
-border: solid 1px red;
-  grid-template-columns: 300px 300px 400px;
-  grid-template-rows: 90px 300px 90px;
+  grid-template-columns: 90px 90px 90px 90px 90px;
+  grid-template-rows: 90px 90px 90px 90px 90px;
+  grid-column-gap: 90px;
+grid-row-gap: 90px;
+background-color: red;
+height: 400px;
+position: absolute;
+top:0px;
 }
 
-.element {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.item1{
 
-  background-color: #f06424;
+  background-color: black
+
+}.item3{
+
+  grid-area: 1 2 2 3;
+  background-color: white;
+
+}
+.item4{
+
+  grid-area: 1 1 2 2;
+  background-color: white;
 
 }
 
-.color-bg5 {
-  background-color: #343175;
-  height: 200px;
-  width: 100%;
-  z-index: -6;
+.item5{
 
-    transform: skewY(10deg) translateY(-230px);
+  grid-area: 1 1 2 2;
+  background-color: white;
+
 }
 
-.color-bg4 {
-  background-color: #D7D456;
-  height: 45px;
-  transform: skewY(-10deg) translateY(100px);
 
-  width: 100%;
-}
-.second {
+.welcome {
   z-index: 2;
   padding: 50px 0 0 90px;
   width: 100%;
-  background-color: #186d83;
-  transform: skewY(-10deg);
+
 }
 .work {
   color: #262a2e;
@@ -97,7 +59,6 @@ border: solid 1px red;
   padding-left: 10%;
 }
 .name {
-  transform: skewY(10deg);
   color: #000;
   font-size: 2.5em;
   font-weight: bold;
@@ -106,7 +67,6 @@ border: solid 1px red;
 
 .intro-text {
   font-size: 1.4em;
-  transform: skewY(10deg);s
   color: #000
 }
 
