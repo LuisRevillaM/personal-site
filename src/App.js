@@ -3,10 +3,33 @@ import "./App.css";
 import check from "./assets/check.png";
 import commits from "./commits.json";
 
+const copyToClipboard = str => {
+  const el = document.createElement("textarea"); // Create a <textarea> element
+  el.value = str; // Set its value to the string that you want copied
+  el.setAttribute("readonly", ""); // Make it readonly to be tamper-proof
+  el.style.position = "absolute";
+  el.style.left = "-9999px"; // Move outside the screen to make it invisible
+  document.body.appendChild(el); // Append the <textarea> element to the HTML document
+  const selected =
+    document.getSelection().rangeCount > 0 // Check if there is any content selected previously
+      ? document.getSelection().getRangeAt(0) // Store selection if found
+      : false; // Mark as false to know no selection existed before
+  el.select(); // Select the <textarea> content
+  document.execCommand("copy"); // Copy - only works as a result of a user action (e.g. click events)
+  document.body.removeChild(el); // Remove the <textarea> element
+  if (selected) {
+    // If a selection existed before copying
+    document.getSelection().removeAllRanges(); // Unselect everything on the HTML document
+    document.getSelection().addRange(selected); // Restore the original selection
+  }
+};
+
 class App extends Component {
   state = {
-    limit: 4,
-    btn: "Show more"
+    limit: 3,
+    btn: "Show more",
+    copy: "Copy my email",
+    btnSuccess: false
   };
   componentWillMount() {
     this.commitdata = commits.reverse();
@@ -27,8 +50,22 @@ class App extends Component {
       <div className="main-grid">
         <div className="header">
           <div className="name">Luis Revilla</div>{" "}
-          <div className="copy-btn">
-            <div>Copy my email</div>
+          <div
+            onClick={() => {
+              copyToClipboard("luisrevillameza@gmail.com");
+              this.setState({ copy: "Got it!", btnSuccess: true }, st => {
+                setTimeout(() => {
+                  this.setState({ btnSuccess: false }, () => {
+                    this.setState({ copy: "Copy my mail" });
+                  });
+                }, 400);
+              });
+            }}
+            className={
+              this.state.btnSuccess ? "copy-btn btn-success" : "copy-btn"
+            }
+          >
+            <div>{this.state.copy}</div>
           </div>
         </div>
         <div className="main">
@@ -100,12 +137,18 @@ class App extends Component {
               return (
                 <div className="commit">
                   <div className="project-title">{com.project}</div>
-                  <div className="commit-message">Commit: {com.commit}</div>
-                  <div className="working-branch">On branch {com.branch}</div>
-                  <div className="git-remote">
-                    Remote repository: {com.remote}{" "}
+                  <div className="commit-message">
+                    <span>Message:</span> "{com.commit}"
                   </div>
-                  <div className="commit-date">{com.date}</div>
+                  <div className="working-branch">
+                    <span>On branch:</span> "{com.branch}"
+                  </div>
+                  <div className="git-remote">
+                    <a target="_blank" href={com.remote}>
+                      {com.remote}
+                    </a>{" "}
+                    <div className="commit-date">{com.date}</div>
+                  </div>
                 </div>
               );
             })}
@@ -114,10 +157,10 @@ class App extends Component {
           <button
             className="commits-btn"
             onClick={() => {
-              if (this.state.limit === 4) {
-                this.setState({ limit: 10, btn: "Show less" });
-              } else if (this.state.limit === 10) {
-                this.setState({ limit: 4, btn: "Show more" });
+              if (this.state.limit === 3) {
+                this.setState({ limit: 20, btn: "Show less" });
+              } else if (this.state.limit === 20) {
+                this.setState({ limit: 3, btn: "Show more" });
               }
             }}
           >

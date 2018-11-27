@@ -30,43 +30,8 @@
   {
     "project": "Personal website",
     "branch": "grid-based",
-    "commit": "Testing middle step to extract last 20 commits",
+    "commit": "button to show more commits",
     "remote": "https://github.com/luisrevillam/personal-site.git",
-    "date": "2018-11-26 15:36:28"
-  },
-  {
-    "project": "Personal website",
-    "branch": "grid-based",
-    "commit": "fixed script to add commits",
-    "remote": "https://github.com/luisrevillam/personal-site.git",
-    "date": "2018-11-26 15:40:26"
-  },
-  {
-    "project": "Personal website",
-    "branch": "grid-based",
-    "commit": "New grid-based layout & design",
-    "remote": "https://github.com/luisrevillam/personal-site.git",
-    "date": "2018-11-27 16:17:15"
-  },
-  {
-    "project": "Personal website",
-    "branch": "grid-based",
-    "commit": "Testing middle step to extract last 20 commits",
-    "remote": "https://github.com/luisrevillam/personal-site.git",
-    "date": "2018-11-26 15:36:28"
-  },
-  {
-    "project": "Personal website",
-    "branch": "grid-based",
-    "commit": "fixed script to add commits",
-    "remote": "https://github.com/luisrevillam/personal-site.git",
-    "date": "2018-11-26 15:40:26"
-  },
-  {
-    "project": "Personal website",
-    "branch": "grid-based",
-    "commit": "New grid-based layout & design",
-    "remote": "https://github.com/luisrevillam/personal-site.git",
-    "date": "2018-11-27 16:17:15"
+    "date": "2018-11-27 16:59:37"
   }
 ]
