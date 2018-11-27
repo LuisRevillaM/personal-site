@@ -1,105 +1,165 @@
-.Commit {
-  border: solid 8px lightblue;
-  border-radius: 80;
-  margin: 20px;
-  padding: 0 15px 10px 10px;
-  color: #4b5158;
-}
-
-/*D7D456;*/
-
-.grid {
+.main-grid {
   display: grid;
-  grid-template-columns: 90px 90px 90px 90px 90px;
-  grid-template-rows: 90px 90px 90px 90px 90px;
-  grid-column-gap: 90px;
-grid-row-gap: 90px;
-background-color: red;
-height: 400px;
-position: absolute;
-top:0px;
-}
-
-.item1{
-
-  background-color: black
-
-}.item3{
-
-  grid-area: 1 2 2 3;
-  background-color: white;
-
-}
-.item4{
-
-  grid-area: 1 1 2 2;
-  background-color: white;
-
-}
-
-.item5{
-
-  grid-area: 1 1 2 2;
-  background-color: white;
-
-}
-
-
-.welcome {
-  z-index: 2;
-  padding: 50px 0 0 90px;
   width: 100%;
+  height: 100vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10vh 84vh 84vh 40vh;
+  overflow-y: scroll;
+}
 
+.header {
+  grid-column: 1 / 3;
+  grid-row: 1/2;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 4vh 15.2vw 4vh 15vw;
+  align-items: center;
+  border-top: 4px solid #FC0000;
 }
-.work {
-  color: #262a2e;
-  font-size: 1.4em;
-  font-weight: bold;
-  margin-bottom: 8px;
-  padding-left: 10%;
-}
+
 .name {
-  color: #000;
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-bottom: 8px;
+  position: relative;
+  color: #262A2E;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: calc(18px + 1.2vw);
 }
 
-.intro-text {
-  font-size: 1.4em;
-  color: #000
+.copy-btn {
+  background-color: #fff;
+  color: #FC0000;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 420;
+  border-radius: 6px;
+  border: 2px solid #FC0000;
+  cursor: pointer;
+  height: 0px;
+  transition: all 0.4s ease-out;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
-.feature-block {
-  width: 100%;
-  padding: 30px 10%;
-  color: #4b5158;
+.copy-btn:hover {
+  color: hsl(0,0%,100%, 0.9);
+  background-color: #FC0000;
+
+
+}
+
+.main {
+  grid-column: 1 / 2;
+  grid-row: 2/3;
+  background-color: white;
+  padding-left: 15vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: -12vh;
+    font-family: 'Roboto Condensed', sans-serif;
+      font-weight: bold;
+      font-size: calc(40px + 0.5vw);
+      color: #262A2E;
+}
+
+.sub-title {
+      font-family: 'Open Sans', sans-serif;
+        font-size: calc(14px + 0.5vw);
+        color: #4B5158;
+        margin-top: 1.4vh;
+}
+
+.features {
+  background-color: white;
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-right: 15vw;
+
+
+}
+
+.check-icon {
+  width: calc(1vw + 14px);
+  height:  calc(1vw + 14px);
+  margin-top: 0.8vh;
+
 }
 
 .feature {
-  padding-top: 10px;
+
+    display: flex;
+  margin-bottom: 4vh;
+
 }
 
-.feature span {
-  font-weight: bold;
+.feature-text {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 1.2vh;
+  font-size: calc(14px + 0.5vw);
+  color: #4B5158;
+
 }
-.app-parent {
-  z-index: -100;
+
+.feature-text span{
+
+  font-weight: 570;
+
+}
+
+.commits {
+    background-color: #F0F1EC;
+    grid-column: 1 / 3;
+    grid-row: 3/4;
+    padding: 0 15vw;
+
+}
+
+.commits-title {
+  color: #262A2E;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  padding-top: 8vh;
+  font-size: calc(35px + 0.5vw);
+
+}
+
+.commits-intro {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  color: #4B5158;
+  font-size: calc(10px + 0.5vw);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+.commits-intro div {
+  text-align: left;
+  padding: 1vw 16vw 1vw 17vw;
 }
 
-.Commit div {
-  margin-top: 10px;
+.footer {
+  grid-row: 4/5;
+  grid-column: 1/3;
+  background-color: #FCDD25;
 }
 
-.feature-card {
-  height: 60vh;
-  width: 80%;
-  border-radius: 40px;
-  box-shadow: 12px 12px 2px 1px #7f878f;
-  background-color: #f8f9fa;
-  z-index: 5000;
-  position: relative;
+.commit {
+  background-color: white;
+  margin: 10px 16.4vw;
+  border-radius: 6px;
+  padding: 1vw;
+  color: #262A2E;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+}
+.project-title {
+
 }
