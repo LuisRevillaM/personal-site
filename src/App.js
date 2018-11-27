@@ -4,11 +4,20 @@ import check from "./assets/check.png";
 import commits from "./commits.json";
 
 class App extends Component {
+  state = {
+    limit: 4,
+    btn: "Show more"
+  };
+  componentWillMount() {
+    this.commitdata = commits.reverse();
+  }
   componentDidMount() {
     this.scrollToCommits();
   }
 
   commits;
+
+  commitdata;
 
   scrollToCommits = () => {
     this.commits.scrollIntoView();
@@ -77,25 +86,43 @@ class App extends Component {
             <div>Check out my latest commits!</div>
           </div>
           <div className="commits-intro">
-            <div>Every time I commit changes to my local repositories, a bash script updates this list. This way you can see what I'm up to daily.</div>
-
+            <div>
+              Every time I commit changes to my local repositories, a bash
+              script updates this list. This way you can see what I'm up to
+              daily.
+            </div>
+          </div>
+          <div className="commit-box">
+            {this.commitdata.map((com, i) => {
+              if (i >= this.state.limit) {
+                return null;
+              }
+              return (
+                <div className="commit">
+                  <div className="project-title">{com.project}</div>
+                  <div className="commit-message">Commit: {com.commit}</div>
+                  <div className="working-branch">On branch {com.branch}</div>
+                  <div className="git-remote">
+                    Remote repository: {com.remote}{" "}
+                  </div>
+                  <div className="commit-date">{com.date}</div>
+                </div>
+              );
+            })}
           </div>
 
-          {commits.reverse().map((com,i) => {
-           if(i>9){
-             return null;
-           }
-           return (
-             <div className="commit">
-               <div className="project-title">{com.project}</div>
-               <div className="commit-message">Commit: {com.commit}</div>
-               <div className="working-branch">On branch {com.branch}</div>
-               <div className="git-remote">Remote repository: {com.remote} </div>
-               <div className="commit-date">{com.date}</div>
-             </div>
-           );
-         })}
-
+          <button
+            className="commits-btn"
+            onClick={() => {
+              if (this.state.limit === 4) {
+                this.setState({ limit: 10, btn: "Show less" });
+              } else if (this.state.limit === 10) {
+                this.setState({ limit: 4, btn: "Show more" });
+              }
+            }}
+          >
+            {this.state.btn}
+          </button>
         </div>
         <div className="footer" />
       </div>
