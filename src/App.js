@@ -28,23 +28,17 @@ class App extends Component {
   state = {
     limit: 3,
     btn: "Show more",
-    copy: "Copy my email",
-    btnSuccess: false
+    copyMail1: "Copy email",
+    copyMail2: "Copy email",
+    btn1Success: false,
+    btn2Success: false,
   };
   componentWillMount() {
     this.commitdata = commits.reverse();
   }
-  componentDidMount() {
-    this.scrollToCommits();
-  }
-
-  commits;
 
   commitdata;
 
-  scrollToCommits = () => {
-    this.commits.scrollIntoView();
-  };
   render() {
     return (
       <div className="main-grid">
@@ -53,19 +47,19 @@ class App extends Component {
           <div
             onClick={() => {
               copyToClipboard("luisrevillameza@gmail.com");
-              this.setState({ copy: "Got it!", btnSuccess: true }, st => {
+              this.setState({ copyMail1: "Got it!", btn1Success: true }, st => {
                 setTimeout(() => {
-                  this.setState({ btnSuccess: false }, () => {
-                    this.setState({ copy: "Copy my mail" });
+                  this.setState({ btn1Success: false }, () => {
+                    this.setState({ copyMail1: "Copy email" });
                   });
-                }, 400);
+                }, 700);
               });
             }}
             className={
-              this.state.btnSuccess ? "copy-btn btn-success" : "copy-btn"
+              this.state.btn1Success ? "copy-btn btn-success" : "copy-btn"
             }
           >
-            <div>{this.state.copy}</div>
+            <div>{this.state.copyMail1}</div>
           </div>
         </div>
         <div className="main">
@@ -115,9 +109,6 @@ class App extends Component {
         </div>
         <div
           className="commits"
-          ref={el => {
-            this.commits = el;
-          }}
         >
           <div className="commits-title">
             <div>Check out my latest commits!</div>
@@ -167,7 +158,26 @@ class App extends Component {
             {this.state.btn}
           </button>
         </div>
-        <div className="footer" />
+        <div className="footer" >
+          <div className="footer-title">Let's get to work.</div>
+          <div className="footer-text">
+          Contact me if you need someone who knows JS, loves to learn and has potential to lead and teach.
+          </div>
+          <div onClick={() => {
+            copyToClipboard("luisrevillameza@gmail.com");
+            this.setState({ copyMail2: "Got it!", btn2Success: true }, st => {
+              setTimeout(() => {
+                this.setState({ btn2Success: false }, () => {
+                  this.setState({ copyMail2: "Copy email" });
+                });
+              }, 700);
+            });
+          }} className={
+            this.state.btn2Success ? "copy-btn btn-success" : "copy-btn"
+          }><div>{this.state.copyMail2}</div></div>
+
+          <div className="footer-footer">Luis Revilla (2018). Learn more about me reading my <span>bio</span>. We can also have coffee anytime!</div>
+        </div>
       </div>
     );
   }
