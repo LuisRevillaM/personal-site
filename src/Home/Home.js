@@ -1,9 +1,33 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import check from "../assets/check.png";
 import commits from "../commits.json";
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js"
 import "./Home.css";
+
+const Fo = ()=>{
+  return (    <div>
+        Read my{" "}
+        <span>
+          <Link to="/bio" className="cv">
+            bio
+          </Link>
+        </span>{" "}
+        or{" "}
+        <span>
+          <a
+            className="cv"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://luisrevillam.github.io/cv.pdf"
+          >
+            download my CV
+          </a>
+        </span>{" "}
+        to learn more about me. We can also grab coffee anytime!
+      </div>);
+}
 
 class Home extends Component {
   state = {
@@ -117,7 +141,7 @@ class Home extends Component {
             {this.state.btn}
           </button>
         </div>
-    <Footer/>
+    <Footer title="Let's get to work." fo={<Fo/>}/>
       </div>
     );
   }

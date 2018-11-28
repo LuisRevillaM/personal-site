@@ -75,6 +75,8 @@
 
 }
 
+
+
 .commits {
     background-color: #F0F1EC;
     grid-column: 1 / 3;
@@ -194,4 +196,10 @@ font-style: italic;
 }
 .commits-btn:focus {
   outline: 0;
+}
+
+
+.cv {
+  text-decoration: none;
+  color: #262A2E;
 }

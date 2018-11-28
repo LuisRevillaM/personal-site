@@ -26,11 +26,6 @@
 
 }
 
-.cv {
-  text-decoration: none;
-  color: #262A2E;
-}
-
 
 .footer-title {
   font-family: 'Roboto Condensed', sans-serif;
@@ -40,15 +35,15 @@
 }
 
 .footer-footer {
-  color: #4B5158;
+color: #4B5158;
+font-size: calc(8px + 0.5vw);
   width: 100%;
   margin-top: 28px;
-  font-size: calc(8px + 0.5vw);
   line-height: 1.8;
   text-align: center;
 }
 
-.footer-footer div {
+.footer-footer-bye {
   color: #FC0000;
   font-size: calc(6px + 0.5vw);
   padding-top: 1vw;
