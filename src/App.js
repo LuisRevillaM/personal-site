@@ -115,8 +115,7 @@ class App extends Component {
           </div>
           <div className="commits-intro">
             <div>
-              Every time I commit changes to my local repositories, a bash
-              script updates this list. This way you can see what I'm up to
+              I wrote a bash script that updates this list every time I commit changes to my local repositories. This way you can see what I'm up to
               daily.
             </div>
           </div>
@@ -176,7 +175,7 @@ class App extends Component {
             this.state.btn2Success ? "copy-btn btn-success" : "copy-btn"
           }><div>{this.state.copyMail2}</div></div>
 
-          <div className="footer-footer">Luis Revilla (2018). Learn more about me reading my <span>bio</span>. We can also have coffee anytime!</div>
+          <div className="footer-footer">Read my <span>bio</span> to learn more about me. We can also have coffee anytime! <div>Made with care by Luis Revilla (2018).</div></div>
         </div>
       </div>
     );
