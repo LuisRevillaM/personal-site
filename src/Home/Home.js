@@ -11,10 +11,6 @@ import dialogue from "../assets/dialogue.svg";
 import learn from "../assets/learn.svg";
 import backend from "../assets/backend.svg";
 
-
-
-
-
 import "./Home.css";
 
 const Fo = ()=>{
@@ -48,7 +44,9 @@ class Home extends Component {
     btn2Success: false,
   };
   componentWillMount() {
-    this.commitdata = commits.reverse();
+
+    this.commitdata = commits.slice();
+    this.commitdata.reverse();
   }
 
   commitdata;
@@ -86,7 +84,7 @@ class Home extends Component {
             <img alt="feature icon" className="check-icon" src={learn} />
             <div className="feature-text">
               Extraordinary&nbsp;<span>ability to learn</span>.
-              
+
             </div>
           </div>
           <div className="feature">
