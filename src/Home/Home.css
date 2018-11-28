@@ -48,9 +48,11 @@
 }
 
 .check-icon {
-  width: calc(1vw + 14px);
-  height:  calc(1vw + 14px);
-  margin-top: 0.8vh;
+  width: calc(1vw + 28px);
+  height:  calc(1vw + 28px);
+
+  margin-top: 4px;
+
 
 }
 
@@ -63,7 +65,7 @@
 .feature-text {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 1.2vh;
+  margin-left: 1.9vh;
   font-size: calc(14px + 0.5vw);
   color: #4B5158;
 
@@ -130,7 +132,22 @@
 .project-title {
 color: #373D42;
 padding-bottom: 0.7vw;
-font-weight: bold;
+font-family: 'Roboto Condensed', sans-serif;
+display: flex;
+justify-content: space-between;
+font-size: calc(10px + 0.5vw);
+
+}
+
+.fresh {
+  background-color: #FCDF1D;
+  font-size: calc(5px + 0.5vw);
+  padding: 3px 6px;
+  color: #fc0000;
+
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 .commit-message{
   margin-bottom: 0.3vw;
@@ -176,6 +193,7 @@ font-style: italic;
   text-align: right;
   font-size: calc(9px + 0.25vw);
 }
+
 
 
 .commits-btn {

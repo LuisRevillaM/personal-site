@@ -55,7 +55,7 @@ class Bio extends Component {
         </div>
         <div className="bottom-right">
           <div className="bio-text2">
-            I then built the frontend of our MVP, in time to apply for an
+            Then I built the frontend of our MVP, in time to apply for an
             important startup accelerator in South America. I wrote the
             application form and we were admitted (Startup Chile Generation 16).
             I left the company for personal reasons by the end of 2017.
@@ -67,7 +67,8 @@ class Bio extends Component {
             so we moved here and got married a couple months after.
           </div>
           <div className="bio-text2">
-            My most recent project is an audio newsletter app for the most
+            My most recent project is an audio <a className="link" href="https://itunes.apple.com/us/app/al-d%C3%ADa-con-c%C3%A9sar-miguel-rond%C3%B3n/id1385169030?mt=8"  target="_blank"
+            rel="noopener noreferrer">newsletter app</a> for the most
             important radio personality in Venezuela. The system is composed by
             a Node backend, a React web client to create newsletters and a React
             Native app for end users. The app is already running on thousands of

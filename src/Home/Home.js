@@ -3,7 +3,18 @@ import { Link } from "react-router-dom";
 import check from "../assets/check.png";
 import commits from "../commits.json";
 import Header from "../Header/Header.js";
-import Footer from "../Footer/Footer.js"
+import Footer from "../Footer/Footer.js";
+import plat from "../assets/plat.svg";
+import react from "../assets/react.svg";
+import design from "../assets/design.svg";
+import dialogue from "../assets/dialogue.svg";
+import learn from "../assets/learn.svg";
+import backend from "../assets/backend.svg";
+
+
+
+
+
 import "./Home.css";
 
 const Fo = ()=>{
@@ -53,38 +64,39 @@ class Home extends Component {
         </div>
         <div className="features">
           <div className="feature">
-            <img alt="feature icon" className="check-icon" src={check} />
+            <img alt="feature icon" className="check-icon" src={plat} />
             <div className="feature-text">
               Author of code running on&nbsp;<span>thousands of devices</span>.
             </div>
           </div>
           <div className="feature">
-            <img alt="feature icon" className="check-icon" src={check} />
+            <img alt="feature icon" className="check-icon" src={react} />
             <div className="feature-text">
               2+ years building UIs with&nbsp;<span>React & React Native</span>.
             </div>
           </div>{" "}
           <div className="feature">
-            <img alt="feature icon" className="check-icon" src={check} />
+            <img alt="feature icon" className="check-icon" src={backend} />
             <div className="feature-text">
-              <span>Fullstack</span>. Proficient at bulding & deploying web
+              <span>Fullstack</span>. Proficient at building & deploying web
               services.
             </div>
           </div>
           <div className="feature">
-            <img alt="feature icon" className="check-icon" src={check} />
+            <img alt="feature icon" className="check-icon" src={learn} />
             <div className="feature-text">
               Extraordinary&nbsp;<span>ability to learn</span>.
+              
             </div>
           </div>
           <div className="feature">
-            <img alt="feature icon" className="check-icon" src={check} />
+            <img alt="feature icon" className="check-icon" src={design} />
             <div className="feature-text">
               Strong&nbsp;<span>intuition for design</span>.
             </div>
           </div>
           <div className="feature">
-            <img alt="feature icon" className="check-icon" src={check} />
+            <img alt="feature icon" className="check-icon" src={dialogue} />
             <div className="feature-text">
               Exceptional&nbsp;<span>communication skills</span>. Background in
               journalism, broadcasting and advertising.
@@ -108,9 +120,10 @@ class Home extends Component {
               if (i >= this.state.limit) {
                 return null;
               }
+              let date = new Date(com.date);
               return (
                 <div className="commit">
-                  <div className="project-title">{com.project}</div>
+                  <div className="project-title">{com.project} { Date.now() < (date.getTime() + 4*3600*1000 ) ? <div className="fresh">fresh!</div> : null }</div>
                   <div className="commit-message">
                     <span>Message:</span> "{com.commit}"
                   </div>
