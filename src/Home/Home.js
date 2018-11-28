@@ -121,7 +121,7 @@ class Home extends Component {
               let date = new Date(com.date);
               return (
                 <div className="commit">
-                  <div className="project-title">{com.project} { Date.now() < (date.getTime() + 4*3600*1000 ) ? <div className="fresh">fresh!</div> : null }</div>
+                  <div className="project-title">{com.project} { Date.now() < (date.getTime() + 4*3600*1000 ) ? <div className="fresh"><div>new!</div></div> : null }</div>
                   <div className="commit-message">
                     <span>Message:</span> "{com.commit}"
                   </div>

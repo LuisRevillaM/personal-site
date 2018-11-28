@@ -141,11 +141,14 @@ font-size: calc(10px + 0.5vw);
 
 .fresh {
   background-color: #FCDF1D;
-  font-size: calc(5px + 0.5vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 0.35vw);
   padding: 3px 6px;
-  color: #fc0000;
-
-  font-weight: bold;
+  color: #FC0000;
+  font-weight: 600;
+  text-transform: uppercase;
   border-radius: 20px;
   font-family: "Open Sans", sans-serif;
 }
