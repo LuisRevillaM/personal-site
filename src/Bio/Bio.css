@@ -1,0 +1,59 @@
+.bio-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10vh 50vh 50vh 37vh;
+}
+
+.top-left {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding-left: 15vw;
+
+}
+
+.bio-title {
+  color: #262A2E;
+
+  font-size: calc(35px + 0.5vw);
+  font-family: 'Roboto Condensed', sans-serif;
+/*  margin: 4vw 0 3vw 0;
+*/
+}
+
+.bio-text1 {
+  padding: 1.5vw;
+  padding-left: 0;
+  padding-bottom: 0;
+  color: #4B5158;
+  font-family: "Open Sans", sans-serif;
+}
+.bio-text2 {
+  padding: 1.5vw;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  color: #4B5158;
+  font-family: "Open Sans", sans-serif;
+}
+
+.top-right {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-right: 15vw;
+
+}
+
+.bottom-left {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    
+    padding-left: 15vw;
+
+}
+
+.bottom-right {
+  padding-right: 15vw;
+    grid-row: 3/4;
+    grid-column: 2/3;
+
+}
