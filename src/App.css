@@ -3,7 +3,7 @@
   width: 100%;
   height: 100vh;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 10vh 84vh 94vh 35vh;
+  grid-template-rows: 10vh 84vh 92vh 37vh;
   overflow-y: scroll;
 }
 
@@ -143,7 +143,7 @@ font-weight: bold;
   color: #262A2E;
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
-  padding-top: 8vh;
+  padding-top: 6vh;
   font-size: calc(35px + 0.5vw);
 
 }
@@ -279,7 +279,7 @@ font-style: italic;
 .footer-footer {
   color: #4B5158;
   width: 100%;
-  margin-top: 33px;
+  margin-top: 28px;
   font-size: calc(8px + 0.5vw);
   line-height: 1.8;
   text-align: center;
@@ -289,6 +289,8 @@ font-style: italic;
 .footer-footer div {
   color: #FC0000;
   font-size: calc(6px + 0.5vw);
+  padding-top: 1vw;
+  font-family: "Roboto Condensed", sans-serif;
 
 }
 

@@ -175,7 +175,7 @@ class App extends Component {
             this.state.btn2Success ? "copy-btn btn-success" : "copy-btn"
           }><div>{this.state.copyMail2}</div></div>
 
-          <div className="footer-footer">Read my <span>bio</span> to learn more about me. We can also have coffee anytime! <div>Made with care by Luis Revilla (2018).</div></div>
+          <div className="footer-footer">Read my <span>bio</span> to learn more about me. We can also grab coffee anytime! <div>Made with care by Luis Revilla (2018).</div></div>
         </div>
       </div>
     );
