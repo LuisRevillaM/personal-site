@@ -160,7 +160,7 @@ class App extends Component {
         <div className="footer" >
           <div className="footer-title">Let's get to work.</div>
           <div className="footer-text">
-          Contact me if you need someone who knows JS, loves to learn and has potential to lead and teach.
+          <div>Read my <span>bio</span> or <span><a className="cv" href="https://luisrevillam.github.io/cv.pdf">download my CV</a></span> to learn more about me. We can also grab coffee anytime!</div>
           </div>
           <div onClick={() => {
             copyToClipboard("luisrevillameza@gmail.com");
@@ -174,8 +174,11 @@ class App extends Component {
           }} className={
             this.state.btn2Success ? "copy-btn btn-success" : "copy-btn"
           }><div>{this.state.copyMail2}</div></div>
+          <div className="footer-footer">
+          Contact me if you need someone who knows JS, loves to learn and has potential to lead and teach others.
+          <div>Made with care by Luis Revilla (2018).</div></div>
 
-          <div className="footer-footer">Read my <span>bio</span> to learn more about me. We can also grab coffee anytime! <div>Made with care by Luis Revilla (2018).</div></div>
+
         </div>
       </div>
     );

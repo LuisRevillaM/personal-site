@@ -262,13 +262,24 @@ font-style: italic;
   display: flex;
   justify-content: center;
   color: #4B5158;
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(8px + 0.5vw);
   margin: 30px 0;
   width: 48vw;
   font-family: "Open Sans",sans-serif;
   color:
+}
+.footer-text span {
+  font-weight: bold;
+  color: #262A2E;
 
 }
+
+.cv {
+  text-decoration: none;
+  color: #262A2E;
+}
+
+
 .footer-title {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
@@ -283,7 +294,6 @@ font-style: italic;
   font-size: calc(8px + 0.5vw);
   line-height: 1.8;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
 }
 
 .footer-footer div {
@@ -292,9 +302,4 @@ font-style: italic;
   padding-top: 1vw;
   font-family: "Roboto Condensed", sans-serif;
 
-}
-
-.footer-footer span {
-  color: #FC0000;
-  font-weight: bold;
 }
