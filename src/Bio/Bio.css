@@ -133,7 +133,7 @@
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 880px) {
   .top-left {
     grid-column: 1/3;
     padding: 0 5vw;
@@ -148,6 +148,7 @@
     }
   .bio-image {
  width: 100%;
+ height: 100%;
 
   }
   .bio-image2 {
