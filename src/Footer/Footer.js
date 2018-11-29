@@ -12,7 +12,7 @@ class Footer extends Component {
       <div className="footer">
         <div className="footer-title">{this.props.title}</div>
         <div className="footer-text">
-          {this.props.fo}
+          {this.props.fo}<div></div>
         </div>
         <div
           onClick={() => {
@@ -32,8 +32,7 @@ class Footer extends Component {
           <div>{this.state.copyMail2}</div>
         </div>
         <div className="footer-footer">
-          Contact me if you need someone who knows JS, loves to learn and has
-          potential to lead and teach others.
+
           <div className="footer-footer-bye">Made with care by Luis Revilla (2018) <div>{this.props.home}</div></div>
         </div>
       </div>

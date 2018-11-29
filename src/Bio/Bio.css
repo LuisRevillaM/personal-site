@@ -3,17 +3,13 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 10vh 55vh 55vh 40vh;
   font-size: calc(8px + 0.5vw);
-
 }
 
 .amore {
-
-  color: #858D95;
-
+color: #858D95;
 padding: 10px 0;
 font-size: calc(5px + 0.5vw);
 text-align: center;
-
 }
 
 .top-left {
@@ -21,31 +17,29 @@ text-align: center;
   grid-row: 2/3;
   padding-left: 15vw;
   background-color: #F0F1EC;
-
-
 }
 
 .bio-title {
   color: #262A2E;
-
   font-size: calc(35px + 0.5vw);
   font-family: 'Roboto Condensed', sans-serif;
-margin: 1.5vw 0;
-
+  margin: 1.5vw 0;
 }
 
 .bio-text1 {
   padding: 1.5vw;
   padding-left: 0;
   padding-bottom: 0;
+  line-height: 1.4;
   color: #4B5158;
   font-family: "Open Sans", sans-serif;
 }
+
 .bio-text2 {
   padding: 1.5vw;
   padding-right: 0;
   padding-bottom: 0;
-
+  line-height: 1.4;
   color: #4B5158;
   font-family: "Open Sans", sans-serif;
 }
@@ -105,5 +99,5 @@ margin: 1.5vw 0;
 
 .link {
   color: #fc0000;
-  
+
 }

@@ -17,9 +17,8 @@ class Bio extends Component {
         <div className="top-left">
           <div className="bio-title">Bio</div>
           <div className="bio-text1">
-            Born in Venezuela (1989). Took a major in electronic engineering
-            but, in the end, my passion for sports became a career in digital
-            and traditional media. I was lucky to call "going to the stadium and
+            Born in Venezuela (1989). Picked electronic engineering as my major in college
+            but, in the end, my passion for sports became a career in media. I was lucky to call "going to the stadium and
             writing about it" my job. My articles were acknowledged by actual
             legends in Venezuelan sports media; then I got to work with them. I
             also collaborated with professional soccer coaches and scouts around
@@ -49,8 +48,8 @@ class Bio extends Component {
         </div>
         <div className="bottom-left">
           <div>
-            <img src={ny} className="bio-image2" alt="Me running" />
-            <div className="amore">Wedding day (May 2018).</div>
+            <img src={ny} className="bio-image2" alt="Wedding day in NY" />
+            <div className="amore">Wedding day in Manhattan (May 2018).</div>
           </div>
         </div>
         <div className="bottom-right">
@@ -63,11 +62,11 @@ class Bio extends Component {
           <div className="bio-text2">
             You could say I was falling in love with programming as I was
             falling in love with my wife, an American woman then living in
-            Argentina. Last March (2018) she found a new job in New York City,
+            Argentina. Last March (2018) she found a great job in New York City,
             so we moved here and got married a couple months after.
           </div>
           <div className="bio-text2">
-            My most recent project is an audio <a className="link" href="https://itunes.apple.com/us/app/al-d%C3%ADa-con-c%C3%A9sar-miguel-rond%C3%B3n/id1385169030?mt=8"  target="_blank"
+            My most recent work is an audio <a className="link" href="https://itunes.apple.com/us/app/al-d%C3%ADa-con-c%C3%A9sar-miguel-rond%C3%B3n/id1385169030?mt=8"  target="_blank"
             rel="noopener noreferrer">newsletter app</a> for the most
             important radio personality in Venezuela. The system is composed by
             a Node backend, a React web client to create newsletters and a React

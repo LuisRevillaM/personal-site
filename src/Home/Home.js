@@ -4,12 +4,12 @@ import check from "../assets/check.png";
 import commits from "../commits.json";
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js";
-import plat from "../assets/plat.svg";
-import react from "../assets/react.svg";
-import design from "../assets/design.svg";
-import dialogue from "../assets/dialogue.svg";
-import learn from "../assets/learn.svg";
-import backend from "../assets/backend.svg";
+import plat from "../assets/plat.png";
+import react from "../assets/react.png";
+import design from "../assets/design.png";
+import dialogue from "../assets/dialogue.png";
+import learn from "../assets/learn.png";
+import backend from "../assets/backend.png";
 
 import "./Home.css";
 
@@ -76,7 +76,7 @@ class Home extends Component {
           <div className="feature">
             <img alt="feature icon" className="check-icon" src={backend} />
             <div className="feature-text">
-              <span>Fullstack</span>. Proficient at building & deploying web
+              <span>Full-stack</span>. Proficient at building & deploying web
               services.
             </div>
           </div>
