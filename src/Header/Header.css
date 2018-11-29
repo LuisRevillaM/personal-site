@@ -33,6 +33,7 @@
   height: auto;
   width: 7vw;
   transition: all 0.4s ease-out;
+  text-decoration: none;
 
 }
 .copy-btn div {
