@@ -24,14 +24,13 @@
 .copy-btn {
   background-color: #FCDF1D;
   color: #FC0000;
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
-  font-weight: 420;
   border-radius: 6px;
   border: 3px solid #FC0000;
   cursor: pointer;
-  height: 0px;
+  height: auto;
   width: 7vw;
   transition: all 0.4s ease-out;
 
@@ -51,6 +50,28 @@ font-weight: bold;
 .copy-btn:hover {
   color: hsl(0,0%,100%, 0.9);
   background-color: #FC0000;
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .header {padding: 4vh 5vw 4vh 5vw;}
+
+  .copy-btn {
+    width: 11vw;
+    padding: 2px 10px;
+  }
+
+  .name {
+    font-size: calc(20px + 1.2vw);
+
+  }
+
+
+
+
 
 
 }

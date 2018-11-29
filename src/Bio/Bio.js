@@ -32,31 +32,31 @@ class Bio extends Component {
             In late 2015, a friend of mine had a compelling idea for a consumer
             app. I started collaborating with him on the brand side of things
             but, at that stage, what the project lacked was more programmers. So
-            I decided to give it a try. I had programmed in college after all. C
-            and low level stuff, but still. I sat down to learn the modern web
+            I decided to give it a try. I had programmed in college after all. Low level stuff and C, but still. I sat down to learn the modern web
             stack.
           </div>
         </div>
         <div className="top-right">
-          <div>
+          <div className="image-container">
             <img src={amore} className="bio-image" alt="Me running" />
-            <div className="amore">
-              Here you can see me do a fist pump before running to get a good
-              shot (Oct 2011).
-            </div>
+
+          </div>
+          <div className="amore">
+            Watch me pump my fist before running to get a good
+            shot (Oct 2011).
           </div>
         </div>
         <div className="bottom-left">
           <div>
             <img src={ny} className="bio-image2" alt="Wedding day in NY" />
-            <div className="amore">Wedding day in Manhattan (May 2018).</div>
+            <div className="ny">Wedding day in Manhattan (May 2018).</div>
           </div>
         </div>
         <div className="bottom-right">
           <div className="bio-text2">
             Then I built the frontend of our MVP, in time to apply for an
             important startup accelerator in South America. I wrote the
-            application form and we were admitted (Startup Chile Generation 16).
+            application form and we were admitted (Startup Chile Gen. 16).
             I left the company for personal reasons by the end of 2017.
           </div>{" "}
           <div className="bio-text2">
@@ -74,11 +74,10 @@ class Bio extends Component {
             devices.
           </div>
           <div className="bio-text2">
-            In early November (2018), I got my Employment Authorization Card,
-            which allows me to work in the US.
+            In early November (2018), US Immigration Services approved my Employment Authorization Card. I'm ready to join your organization.
           </div>
         </div>
-        <Footer title="Available for hire, today." fo="Let's grab coffee or hop on a call." home={<Link to="/">Click here to go back home</Link>}/>
+        <Footer title="Available for hire, today." fo="Let's grab coffee or hop on a call." home={<div>Click <Link to="/">here</Link> to go back home</div>}/>
       </div>
     );
   }

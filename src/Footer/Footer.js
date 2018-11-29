@@ -33,7 +33,7 @@ class Footer extends Component {
         </div>
         <div className="footer-footer">
 
-          <div className="footer-footer-bye">Made with care by Luis Revilla (2018) <div>{this.props.home}</div></div>
+          <div className="footer-footer-bye"> <div>{this.props.home}</div>Made with care by Luis Revilla (2018)</div>
         </div>
       </div>
     );
