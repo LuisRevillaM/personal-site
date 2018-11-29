@@ -22,8 +22,8 @@
 }
 
 .copy-btn {
-  background-color: rgba(252, 223, 29, 0.8);
-  color: #fc0000;
+  background-color: #fc0000;
+  color: #ffeded;
   display: flex;
   border-radius: 6px;
   align-items: center;
@@ -40,11 +40,7 @@
   text-decoration: none;
 }
 
-/*.copy-btn:focus {
 
-    color: #fc0000;
-    background-color: rgba(252, 223, 29, 0.8);
-}*/
 .copy-btn div {
   text-align: center;
   width: 100%;
@@ -57,12 +53,7 @@ font-weight: bold;
     background-color: #FC0000;
 }
 
-.copy-btn:hover {
-  color: hsl(0,0%,100%, 0.9);
-  background-color: #FC0000;
 
-
-}
 
 
 @media screen and (max-width: 880px) {
