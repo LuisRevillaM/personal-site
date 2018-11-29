@@ -143,13 +143,13 @@ class Home extends Component {
             className="commits-btn"
             onClick={() => {
               if (this.state.limit === 3) {
-                this.setState({ limit: 20, btn: "Show less" });
-              } else if (this.state.limit === 20) {
+                this.setState({ limit: 10, btn: "Show less" });
+              } else if (this.state.limit === 10) {
                 this.setState({ limit: 3, btn: "Show more" });
               }
             }}
           >
-            {this.state.btn}
+            <div>{this.state.btn}</div>
           </button>
         </div>
     <Footer title="Let's get to work." fo={<Fo/>}/>

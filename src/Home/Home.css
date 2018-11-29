@@ -3,7 +3,7 @@
   width: 100%;
   height: 100vh;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 10vh 84vh 92vh 37vh;
+  grid-template-rows: 10vh 84vh auto 37vh;
   overflow-y: scroll;
 }
 
@@ -111,8 +111,7 @@
 }
 
 .commit-box{
-  overflow-y: scroll;
-  height: 55vh;
+
 }
 
 .commit {
@@ -194,13 +193,15 @@ font-style: italic;
   background-color: #F0F1EC;
   transition: all 0.06s ease-out;
   padding-bottom: 15px;
-  border:0;
+  border: 2px solid #F0F1EC;
   box-shadow: 0;
   color: #FC0000;
   font-family: "Open Sans", sans-serif;
   font-size: calc(10px + 0.4vw);
   cursor: pointer;
   margin-top: 20px;
+  margin-bottom: 38px;
+  box-sizing: border-box;
 }
 
 .commits-btn:hover {
