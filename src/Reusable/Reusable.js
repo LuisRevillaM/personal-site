@@ -1,4 +1,6 @@
-const copyToClipboard = str => {
+import React, {Component} from 'react';
+
+export const copyToClipboard = str => {
   const el = document.createElement("textarea"); // Create a <textarea> element
   el.value = str; // Set its value to the string that you want copied
   el.setAttribute("readonly", ""); // Make it readonly to be tamper-proof
@@ -19,4 +21,50 @@ const copyToClipboard = str => {
   }
 };
 
-export default copyToClipboard;
+
+export class CopyButton extends Component {
+  state={
+    copy: "Copy my email",
+    success: false
+  }
+
+
+  render(){
+
+
+    return (    <div
+          onClick={() => {
+            copyToClipboard("luisrevillameza@gmail.com");
+            this.setState({ copy: "Got it!", success: true }, st => {
+              setTimeout(() => {
+                this.setState({ success: false }, () => {
+                  this.setState({ copy: "Copy my email" });
+                });
+              }, 700);
+            });
+          }}
+          className={
+            this.state.success ? "copy-btn btn-success" : "copy-btn"
+          }
+        >
+          <div>{this.state.copy}</div>
+        </div>)
+
+
+  }
+}
+
+export const MailButton = (props)=>{
+  return (
+    <a
+
+      href="mailto:luisrevillameza@gmail.com"
+      className="copy-btn"
+
+    >
+      <div>Email me!</div>
+    </a>
+
+  );
+
+}

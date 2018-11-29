@@ -22,20 +22,29 @@
 }
 
 .copy-btn {
-  background-color: #FCDF1D;
-  color: #FC0000;
-  padding: 10px 20px;
+  background-color: rgba(252, 223, 29, 0.8);
+  color: #fc0000;
   display: flex;
-  align-items: center;
   border-radius: 6px;
-  border: 3px solid #FC0000;
+  align-items: center;
+  border: 3px solid #fc0000;
   cursor: pointer;
-  height: auto;
-  width: 7vw;
   transition: all 0.4s ease-out;
-  text-decoration: none;
 
 }
+
+.header .copy-btn {
+  padding: 0.35vw 0.35vw;
+  height: auto;
+  width: 7vw;
+  text-decoration: none;
+}
+
+/*.copy-btn:focus {
+
+    color: #fc0000;
+    background-color: rgba(252, 223, 29, 0.8);
+}*/
 .copy-btn div {
   text-align: center;
   width: 100%;
@@ -60,7 +69,7 @@ font-weight: bold;
 
   .header {padding: 4vh 5vw 4vh 5vw;}
 
-  .copy-btn {
+  .header .copy-btn {
     width: 11vw;
     padding: 2px 10px;
   }
