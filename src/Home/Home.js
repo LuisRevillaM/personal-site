@@ -58,7 +58,7 @@ class Home extends Component {
         <div className="main">
           {" "}
           <div className="title">Software developer based in NYC.</div>
-          <div className="sub-title">Specialized in UI engineering.</div>{" "}
+          <div className="sub-title">Specialty: UI engineering.</div>{" "}
         </div>
         <div className="features">
           <div className="feature">
