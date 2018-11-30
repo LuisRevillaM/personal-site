@@ -91,6 +91,7 @@ class Home extends Component {
             <img alt="feature icon" className="check-icon" src={design} />
             <div className="feature-text">
               Strong&nbsp;<span>intuition for design</span>.
+
             </div>
           </div>
           <div className="feature">
