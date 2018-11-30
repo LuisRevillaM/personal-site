@@ -24,7 +24,7 @@ export const copyToClipboard = str => {
 
 export class CopyButton extends Component {
   state={
-    copy: "Copy my email",
+    copy: "Copy email",
     success: false
   }
 
@@ -38,7 +38,7 @@ export class CopyButton extends Component {
             this.setState({ copy: "Got it!", success: true }, st => {
               setTimeout(() => {
                 this.setState({ success: false }, () => {
-                  this.setState({ copy: "Copy my email" });
+                  this.setState({ copy: "Copy email" });
                 });
               }, 700);
             });

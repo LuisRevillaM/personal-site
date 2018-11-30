@@ -26,7 +26,8 @@ mail = <MailButton/>;
   {mail}
         <div className="footer-footer">
 
-          <div className="footer-footer-bye"> <div>{this.props.home}</div>Made with care by Luis Revilla (2018)</div>
+          <div className="footer-footer-bye"> Made with care by Luis Revilla (2018)</div>
+          <div className="back-home">{this.props.home}</div>
         </div>
       </div>
     );

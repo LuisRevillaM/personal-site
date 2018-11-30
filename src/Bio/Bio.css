@@ -3,7 +3,8 @@
 .bio-grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 10vh 55vh 55vh 40vh;
+  /*grid-template-rows: 10vh 55vh 55vh 40vh;*/
+  grid-template-rows: auto auto auto auto;
   font-size: calc(8px + 0.5vw);
 }
 
@@ -39,10 +40,6 @@
     padding: 10px 0;
       color: #858d95;
 }
-
-
-
-
 
 
 
@@ -127,6 +124,8 @@
 }
 }
 
+
+
 .top-left, .top-right, .bottom-right, .bottom-left {
   background-color: #f0f1ec;
 }
@@ -179,7 +178,7 @@ padding: 10px 8vw;
   }
 
   .bio-grid {
-    grid-template-rows: 10vh auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
     font-size: calc(8px + 2vw);
 
   }

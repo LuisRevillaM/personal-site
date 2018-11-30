@@ -10,8 +10,6 @@
   justify-content: center;
 }
 
-
-
 .footer-text {
   display: flex;
   justify-content: center;
@@ -54,8 +52,10 @@ font-size: calc(8px + 0.5vw);
 
 }
 
-.footer-footer-bye div {
+.back-home {
   color: #858D95;
+  font-size: calc(6px + 0.5vw);
+
   font-family: serif;
 }
 
@@ -78,10 +78,11 @@ font-size: calc(8px + 0.5vw);
   }
 
 
-  .footer-footer-bye {
+  .footer-footer-bye, .back-home {
     font-size: calc(6px + 2vw);
 
   }
+
 
   .footer .copy-btn{width: 25vw;
   padding: 13px;
@@ -93,13 +94,11 @@ height: 10px;}
   }
 }
 
-.copy-btn:focus {
-  background-color: #fcd
-}
+
 
 
 @media screen and (min-width: 1000px) {
-.copy-btn {
+.footer .copy-btn {
     height: auto;
     padding: 0.7vw 0.7vw;
     width: 8vw;
