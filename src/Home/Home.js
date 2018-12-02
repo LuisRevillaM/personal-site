@@ -131,9 +131,9 @@ class Home extends Component {
                   </div>
                   <div className="git-remote">
                     <a target="_blank" rel="noopener noreferrer" href={com.remote}>
-                      {com.remote}
+                      Remote
                     </a>{" "}
-                    <div className="commit-date">{com.date}</div>
+                    <div className="commit-date"><div>{com.date}</div></div>
                   </div>
                 </div>
               );

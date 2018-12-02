@@ -20,9 +20,9 @@ class Bio extends Component {
             Born in Venezuela (1989). Picked electronic engineering as my major in college
             but, in the end, my passion for sports became a career in media. I was lucky to call "going to the stadium and
             writing about it" my job. My articles were acknowledged by actual
-            legends in Venezuelan sports media; then I got to work with them. I
-            also collaborated with professional soccer coaches and scouts around
-            the world, who appreciated my eye for the tactical side of the game.
+            legends in Venezuelan sports media; then I got to work with them.
+</div>
+            <div className="bio-text1">
             By 2014, however, my country had started its rapid descent into
             total chaos, so I joined the millions who have left in recent years.
             I moved to Argentina, a strong hub for sports broadcasting in South

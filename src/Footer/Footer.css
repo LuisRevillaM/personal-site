@@ -17,6 +17,7 @@
   color: #4B5158;
   font-size: calc(8px + 0.5vw);
   margin: 30px 0;
+     box-sizing: border-box;
   width: 48vw;
   font-family: "Open Sans",sans-serif;
   color:
@@ -69,7 +70,8 @@ font-size: calc(8px + 0.5vw);
     margin: 30px 0;
     width: 100vw;
     font-family: "Open Sans",sans-serif;
-    
+    padding: 0 6vw;
+
   }
 
   .footer {
@@ -79,7 +81,7 @@ font-size: calc(8px + 0.5vw);
 
 
   .footer-footer-bye, .back-home {
-    font-size: calc(6px + 2vw);
+    font-size: calc(7px + 2vw);
 
   }
 
@@ -87,6 +89,11 @@ font-size: calc(8px + 0.5vw);
   .footer .copy-btn{width: 25vw;
   padding: 13px;
 height: 10px;}
+
+.footer .copy-btn div {
+  font-size: calc(7px + 2vw);
+
+}
 
   .footer-title {
     font-size: calc(30px + 0.5vw);
