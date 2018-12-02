@@ -104,10 +104,10 @@
     "date": "2018-12-01 19:18:41"
   },
   {
-    project: "Personal website",
+    "project": "Personal website",
     "branch": "media-queries",
-    commit: "styles for smartphone screens",
+    "commit": "styles for smartphone screens",
     "remote": "https://github.com/luisrevillam/personal-site.git",
-    date: "2018-12-01 19:21:42"
+    "date": "2018-12-01 19:21:42"
   }
 ]
