@@ -233,6 +233,10 @@ padding-bottom: 0.7vw;
     grid-template-rows: auto auto auto auto auto;
   }
 
+  .fresh {
+        font-size: calc(6.5px + 1vw);
+  }
+
   .title {
     font-size: calc(36px + 0.5vw);
   }

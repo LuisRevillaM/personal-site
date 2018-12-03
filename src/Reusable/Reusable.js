@@ -1,4 +1,19 @@
 import React, {Component} from 'react';
+import {withRouter} from "react-router";
+
+class ScrolToTop extends Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0);
+    }
+  }
+
+  render() {
+    return this.props.children;
+  }
+}
+
+export const ScrollToTop = withRouter(ScrolToTop);
 
 export const copyToClipboard = str => {
   const el = document.createElement("textarea"); // Create a <textarea> element

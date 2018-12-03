@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import Header from "../Header/Header.js"
 import { Link } from "react-router-dom";
-
 import amore from "../assets/amore.gif";
 import ny from "../assets/ny.jpg";
 import Footer from "../Footer/Footer.js";
 import "./Bio.css";
 
-
-
 class Bio extends Component {
+
   render() {
     return (
       <div className="bio-grid">
@@ -78,6 +76,7 @@ class Bio extends Component {
           </div>
         </div>
         <Footer title="Available for hire, today." fo="Let's grab coffee or hop on a call." home={<div>Click <Link to="/">here</Link> to go back home</div>}/>
+
       </div>
     );
   }
