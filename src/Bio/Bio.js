@@ -53,8 +53,8 @@ class Bio extends Component {
         <div className="bottom-right">
           <div className="bio-text2">
             Then I built the frontend of our MVP, in time to apply for an
-            important startup accelerator in South America. I wrote the
-            application form and we were admitted (Startup Chile Gen. 16).
+            important startup accelerator in South America. I filled the
+            application forms and we were admitted (Startup Chile Gen. 16).
             I left the company for personal reasons by the end of 2017.
           </div>{" "}
           <div className="bio-text2">
@@ -72,7 +72,7 @@ class Bio extends Component {
             devices.
           </div>
           <div className="bio-text2">
-            In early November (2018), US Immigration Services approved my Employment Authorization Card. I'm ready to join your organization.
+            In early November (2018), US Immigration Services approved my Employment Authorization Card. I'm ready to join your team!
           </div>
         </div>
         <Footer title="Available for hire, today." fo="Let's grab coffee or hop on a call." home={<div>Click <Link to="/">here</Link> to go back home</div>}/>
