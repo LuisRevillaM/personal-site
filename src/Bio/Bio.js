@@ -72,7 +72,7 @@ class Bio extends Component {
             devices.
           </div>
           <div className="bio-text2">
-            In early November (2018), US Immigration Services approved my Employment Authorization Card. I'm ready to join your team!
+            Last November (2018), US Immigration Services approved my Employment Authorization Card. I'm ready to join your team!
           </div>
         </div>
         <Footer title="Available for hire, today." fo="Let's grab coffee or hop on a call." home={<div>Click <Link to="/">here</Link> to go back home</div>}/>
