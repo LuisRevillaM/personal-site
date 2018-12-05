@@ -52,6 +52,7 @@ class Home extends Component {
   commitdata;
 
   render() {
+
     return (
       <div className="main-grid">
         <Header/>

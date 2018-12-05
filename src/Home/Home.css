@@ -54,7 +54,7 @@
 
 .feature {
   display: flex;
-  margin-bottom: 2.5vw;
+     margin-bottom: calc(1vw + 40px);
   justify-content: flex-start;
 }
 
@@ -482,11 +482,7 @@ padding-bottom: 4vw;
 
 }
 
-@media screen and (min-width: 880px) and (max-width: 1700px) {
-  .feature {
-    margin-bottom: 3.5vw;
-  }
-}
+
 
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
 }

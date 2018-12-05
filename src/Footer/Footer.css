@@ -57,7 +57,7 @@ font-size: calc(8px + 0.5vw);
 }
 
 .footer-footer-bye {
-  color: #FC0000;
+    color: #858d95;
   font-size: calc(7px + 0.5vw);
   padding-top: 1vw;
   font-family: "Roboto Condensed", sans-serif;
@@ -200,7 +200,7 @@ font-size: calc(8px + 0.5vw);
 }
 
 
-@media screen and (min-width: 1023px) and (min-height: 1100px) {
+@media screen and (min-width: 1023px) and (min-height: 1100px) and (max-width: 2000px) {
   .footer-text{font-size: calc(8px + 1.5vw);}
 
   .footer .copy-btn {

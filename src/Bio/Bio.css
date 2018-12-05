@@ -265,6 +265,12 @@ padding-top: 0;
   }
 }
 
+@media screen and (min-width: 2300px) {
+  .bottom-right {
+        padding-top: 50px;
+  }
+}
+
 
 
 @media screen and (min-width: 1023px) {
@@ -289,7 +295,7 @@ padding-top: 0;
 
   }
 }
-@media screen and (min-width: 1020px) and (min-height: 1100px) {
+@media screen and (min-width: 1020px) and (min-height: 1100px) and (max-width: 1400px) {
 
 
 
@@ -306,10 +312,11 @@ padding-top: 0;
 }
 .amore, .ny {
   font-size: calc(16px + 1vw);
-  text-align: center;
-}
-.ny {
-  padding-left: 10vw;
+
+
+  box-sizing: border-box;
+width: 95%;
+text-align: center;
 }
   .top-left {
     grid-column: 1/3;
