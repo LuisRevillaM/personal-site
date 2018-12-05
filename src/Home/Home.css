@@ -337,7 +337,7 @@ padding-bottom: 2vw;
   .main {
     grid-column: 1/3;
     grid-row: 2/3;
-    height: 40vh;
+    height: calc(220px + 15vh);
     padding: 0 5vw;
   }
 
