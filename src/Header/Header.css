@@ -41,6 +41,7 @@
   width: 100%;
   font-weight: bold;
   font-size: calc(8px + 0.5vw);
+  
 }
 
 .btn-success {
@@ -51,7 +52,7 @@
 
 
 
-@media screen and (min-width: 1020px) and (max-width: 1300px) {
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
 
   .header{
     padding-left: 10vw;
@@ -60,7 +61,7 @@
 
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1024px) {
   .header {
     padding: 2.5vh 5vw 2.5vh 5vw;
   }
@@ -128,4 +129,12 @@
     height: auto;
     width: 5.6vw;
   }
+}
+
+@media screen and (min-width: 1023px) and (min-height: 1100px) {
+  .header {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
 }

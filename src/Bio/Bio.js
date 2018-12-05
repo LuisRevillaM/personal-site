@@ -52,8 +52,7 @@ class Bio extends Component {
         </div>
         <div className="bottom-right">
           <div className="bio-text2">
-            Then I built the frontend of our MVP, in time to apply for an
-            important startup accelerator in South America. I filled the
+            Then I built the frontend of our MVP, in time to apply for a startup accelerator. I filled the
             application forms and we were admitted (Startup Chile Gen. 16).
             I left the company for personal reasons by the end of 2017.
           </div>{" "}
