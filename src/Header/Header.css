@@ -41,7 +41,6 @@
   width: 100%;
   font-weight: bold;
   font-size: calc(8px + 0.5vw);
-
 }
 
 .btn-success {
@@ -50,15 +49,11 @@
   background-color: #fc0000;
 }
 
-
-
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
-
-  .header{
+  .header {
     padding-left: 10vw;
-  padding-right: 10vw;}
-
-
+    padding-right: 10vw;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -73,7 +68,6 @@
     font-size: calc(20px + 1.2vw);
   }
 }
-
 
 @media screen and (max-width: 440px) {
   .header .copy-btn {
@@ -96,7 +90,6 @@
   .header .copy-btn {
     width: 12vw;
     padding: 0.5vw 0.5vw;
-
   }
 
   .header .copy-btn div {
@@ -136,5 +129,4 @@
     padding-left: 10vw;
     padding-right: 10vw;
   }
-
 }

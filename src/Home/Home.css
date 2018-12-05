@@ -54,14 +54,13 @@
 
 .feature {
   display: flex;
-     margin-bottom: calc(1vw + 40px);
+  margin-bottom: calc(1vw + 40px);
   justify-content: flex-start;
 }
 
 .feature:nth-child(4) .check-icon {
   margin-top: 2px;
 }
-
 
 .feature:nth-child(5) .check-icon {
   margin-top: 2px;
@@ -104,7 +103,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
 
-      box-sizing: border-box;
+  box-sizing: border-box;
   width: 47vw;
   margin: 2vw 0;
 }
@@ -114,17 +113,16 @@
 }
 
 .commit-box {
-
   display: flex;
   flex-direction: column;
   align-items: center;
-box-sizing: border-box;
-width: 100%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .commit {
   background-color: white;
-     margin-bottom: calc(12px + 0.5vw);
+  margin-bottom: calc(12px + 0.5vw);
   border-radius: 6px;
   padding: 1vw;
   width: 47vw;
@@ -169,13 +167,12 @@ width: 100%;
 }
 
 .working-branch {
-
-padding-bottom: 0.7vw;
+  padding-bottom: 0.7vw;
 }
 
 .working-branch span {
   color: #858d95;
-  font-style:  italic;
+  font-style: italic;
 }
 
 .git-remote {
@@ -187,7 +184,6 @@ padding-bottom: 0.7vw;
   text-decoration: underline;
   color: #fc0000;
   font-size: calc(9px + 0.25vw);
-
 }
 
 .commit-date {
@@ -195,9 +191,9 @@ padding-bottom: 0.7vw;
   font-weight: lighter;
   text-align: right;
   display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-     font-size: calc(6px + 0.25vw);
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: calc(6px + 0.25vw);
 }
 
 .commits-btn {
@@ -225,7 +221,6 @@ padding-bottom: 0.7vw;
 }
 
 @media screen and (min-width: 1020px) and (max-width: 1300px) {
-
   .main {
     padding-left: 10vw;
   }
@@ -239,7 +234,7 @@ padding-bottom: 0.7vw;
     padding-top: 0;
   }
 
-  .commits{
+  .commits {
     padding: 0 10vw;
   }
 
@@ -255,30 +250,25 @@ padding-bottom: 0.7vw;
     box-sizing: border-box;
   }
 
+  .project-title {
+    font-size: calc(15px + 0.5vw);
+    padding-bottom: 2vw;
+  }
 
-    .project-title {
-      font-size: calc(15px + 0.5vw);
-padding-bottom: 2vw;
-    }
+  .commit-message {
+    margin-bottom: 0.5vw;
+  }
+  .working-branch {
+    padding-bottom: 2vw;
+  }
 
-    .commit-message{
-      margin-bottom: 0.5vw;
-    }
-     .working-branch{
-       padding-bottom: 2vw;
-     }
+  .git-remote a {
+    font-size: calc(14px + 0.3vw);
+  }
 
-
-     .git-remote a {
-       font-size: calc(14px + 0.3vw);
-
-     }
-
-       .commit-date {
-         font-size: calc(11px + 0.3vw);
-
-       }
-
+  .commit-date {
+    font-size: calc(11px + 0.3vw);
+  }
 }
 
 @media screen and (min-width: 880px) and (max-width: 1024px) {
@@ -295,7 +285,7 @@ padding-bottom: 2vw;
     padding-top: 0;
   }
 
-  .commits{
+  .commits {
     padding: 0 10vw;
   }
 
@@ -313,21 +303,20 @@ padding-bottom: 2vw;
 }
 
 @media screen and (max-width: 880px) {
-
   .main-grid {
     grid-template-rows: auto auto auto auto auto;
   }
 
   .fresh {
-        font-size: calc(6.1px + 1vw);
+    font-size: calc(6.1px + 1vw);
   }
 
   .title {
     font-size: calc(36px + 0.5vw);
   }
 
-  .sub-title{
-    font-size:calc(16px + 0.5vw);
+  .sub-title {
+    font-size: calc(16px + 0.5vw);
   }
 
   .commit-box {
@@ -350,9 +339,7 @@ padding-bottom: 2vw;
   }
 
   .feature {
-
-      margin-bottom: 7vw;
-
+    margin-bottom: 7vw;
   }
 
   .feature-text {
@@ -365,10 +352,10 @@ padding-bottom: 2vw;
   }
 
   .commits-intro {
-width: 100%;
-font-size: calc(14px + 0.5vw);
-text-align: center;
-  padding:8vw 1vw 10vw 1vw;
+    width: 100%;
+    font-size: calc(14px + 0.5vw);
+    text-align: center;
+    padding: 8vw 1vw 10vw 1vw;
   }
 
   .commit {
@@ -380,34 +367,32 @@ text-align: center;
 
   .project-title {
     font-size: calc(15px + 0.5vw);
-padding-bottom: 4vw;
+    padding-bottom: 4vw;
   }
 
-  .commit-message{
+  .commit-message {
     margin-bottom: 0.5vw;
   }
-   .working-branch{
-     padding-bottom: 4vw;
-   }
+  .working-branch {
+    padding-bottom: 4vw;
+  }
 
+  .git-remote a {
+    font-size: calc(9px + 1.3vw);
+  }
 
-   .git-remote a {
-     font-size: calc(9px + 1.3vw);
-   }
+  .commit-date {
+    font-size: calc(6px + 1.3vw);
+  }
 
-     .commit-date {
-       font-size: calc(6px + 1.3vw);
-     }
-
-.commits-btn {
-  font-size: calc(12px + 0.4vw);
-  font-size: calc(12px + 1vw);
-}
-
+  .commits-btn {
+    font-size: calc(12px + 0.4vw);
+    font-size: calc(12px + 1vw);
+  }
 
   .commits-title {
     font-size: calc(25px + 0.5vw);
-        padding-top: 6vw;
+    padding-top: 6vw;
   }
 
   .main-grid .footer {
@@ -415,27 +400,24 @@ padding-bottom: 4vw;
   }
 }
 
-
-
 @media screen and (max-width: 440px) {
   .feature {
+    margin-bottom: 10vw;
+  }
 
-      margin-bottom: 10vw;
+  .title {
+    font-size: calc(30px + 0.5vw);
   }
 }
 
-
 @media screen and (max-width: 350px) {
-
   .fresh {
-        font-size: calc(6.5px + 1vw);
+    font-size: calc(6.5px + 1vw);
   }
 
   .feature {
-
-          margin-bottom: 11vw;
+    margin-bottom: 11vw;
   }
-
 }
 
 @media screen and (min-width: 440px) and (max-width: 640px) {
@@ -444,13 +426,12 @@ padding-bottom: 4vw;
 @media screen and (min-width: 640px) and (max-width: 880px) {
   .feature-text {
     margin-left: 2.6vw;
-        font-size: calc(18px + 0.5vw);
-
+    font-size: calc(18px + 0.5vw);
   }
 
-    .sub-title{
-      font-size:calc(18px + 0.5vw);
-    }
+  .sub-title {
+    font-size: calc(18px + 0.5vw);
+  }
 
   .commits-title {
     font-size: calc(30px + 0.5vw);
@@ -473,16 +454,12 @@ padding-bottom: 4vw;
   .project-title {
     font-size: calc(18px + 0.5vw);
     padding-bottom: 3vw;
-}
+  }
 
-.working-branch {
+  .working-branch {
     padding-bottom: 3vw;
+  }
 }
-
-
-}
-
-
 
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
 }

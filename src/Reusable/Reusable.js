@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {withRouter} from "react-router";
+import React, { Component } from "react";
+import { withRouter } from "react-router";
 
 class ScrolToTop extends Component {
   componentDidUpdate(prevProps) {
@@ -36,50 +36,37 @@ export const copyToClipboard = str => {
   }
 };
 
-
 export class CopyButton extends Component {
-  state={
+  state = {
     copy: "Copy email",
     success: false
-  }
+  };
 
-
-  render(){
-
-
-    return (    <div
-          onClick={() => {
-            copyToClipboard("luisrevillameza@gmail.com");
-            this.setState({ copy: "Got it!", success: true }, st => {
-              setTimeout(() => {
-                this.setState({ success: false }, () => {
-                  this.setState({ copy: "Copy email" });
-                });
-              }, 700);
-            });
-          }}
-          className={
-            this.state.success ? "copy-btn btn-success" : "copy-btn"
-          }
-        >
-          <div>{this.state.copy}</div>
-        </div>)
-
-
+  render() {
+    return (
+      <div
+        onClick={() => {
+          copyToClipboard("luisrevillameza@gmail.com");
+          this.setState({ copy: "Got it!", success: true }, st => {
+            setTimeout(() => {
+              this.setState({ success: false }, () => {
+                this.setState({ copy: "Copy email" });
+              });
+            }, 700);
+          });
+        }}
+        className={this.state.success ? "copy-btn btn-success" : "copy-btn"}
+      >
+        <div>{this.state.copy}</div>
+      </div>
+    );
   }
 }
 
-export const MailButton = (props)=>{
+export const MailButton = props => {
   return (
-    <a
-
-      href="mailto:luisrevillameza@gmail.com"
-      className="copy-btn"
-
-    >
+    <a href="mailto:luisrevillameza@gmail.com" className="copy-btn">
       <div>Email me!</div>
     </a>
-
   );
-
-}
+};
