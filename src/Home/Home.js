@@ -106,7 +106,7 @@ class Home extends Component {
           </div>
           <div className="commits-intro">
             <div>
-              I wrote a bash script that updates this list every time I commit
+              A bash script updates this list every time I commit
               changes to my local git repositories. This way you can see what I'm up
               to daily.
             </div>
@@ -121,7 +121,7 @@ class Home extends Component {
                 <div key={i} className="commit">
                   <div className="project-title">
                     {com.project}{" "}
-                    {Date.now() < date.getTime() + 2 * 3600 * 1000 ? (
+                    {Date.now() < date.getTime() + 5 * 3600 * 1000 ? (
                       <div className="fresh">
                         <div>new!</div>
                       </div>
