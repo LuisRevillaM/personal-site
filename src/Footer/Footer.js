@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import "./Footer.css";
 import {
   CopyButton,
-  MailButton,
-  copyToClipboard
+  MailButton
 } from "../Reusable/Reusable.js";
 
 class Footer extends Component {

@@ -56,6 +56,7 @@
   font-size: calc(7px + 0.5vw);
   padding-top: 1vw;
   font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 3px;
 }
 
 .back-home {
@@ -152,8 +153,8 @@
 
 @media screen and (min-width: 1400px) {
   .footer .copy-btn {
-    padding: calc(0.3vw + 15px) calc(0.3vw + 10px);
-    width: calc(2vw + 130px);
+    padding: calc(0.2vw + 12px) calc(0.2vw + 12px);
+      width: calc(1vw + 130px);
   }
 }
 

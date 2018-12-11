@@ -3,8 +3,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import {
   CopyButton,
-  MailButton,
-  copyToClipboard
+  MailButton
 } from "../Reusable/Reusable.js";
 
 class Header extends Component {

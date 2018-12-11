@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import check from "../assets/check.png";
 import commits from "../commits.json";
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js";
@@ -108,7 +107,7 @@ class Home extends Component {
           <div className="commits-intro">
             <div>
               I wrote a bash script that updates this list every time I commit
-              changes to my local repositories. This way you can see what I'm up
+              changes to my local git repositories. This way you can see what I'm up
               to daily.
             </div>
           </div>
@@ -119,7 +118,7 @@ class Home extends Component {
               }
               let date = new Date(com.date);
               return (
-                <div className="commit">
+                <div key={i} className="commit">
                   <div className="project-title">
                     {com.project}{" "}
                     {Date.now() < date.getTime() + 2 * 3600 * 1000 ? (
