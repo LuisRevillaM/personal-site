@@ -29,7 +29,7 @@ const Fo = () => {
           target="_blank"
           href="https://luisrevillam.github.io/cv.pdf"
         >
-          download my CV
+          download my resume
         </a>
       </span>{" "}
       to learn more about me. We can also grab coffee anytime!
@@ -96,7 +96,7 @@ class Home extends Component {
             <img alt="feature icon" className="check-icon" src={dialogue} />
             <div className="feature-text">
               Exceptional&nbsp;<span>communication skills</span>. Background in
-              journalism, broadcasting and advertising.
+              journalism and advertising.
             </div>
           </div>
         </div>
