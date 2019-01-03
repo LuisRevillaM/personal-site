@@ -27,7 +27,7 @@ const Fo = () => {
           className="cv"
           rel="noopener noreferrer"
           target="_blank"
-          href="https://luisrevillam.github.io/cv.pdf"
+          href="https://luisrevilla.website/cv.pdf"
         >
           download my resume
         </a>
@@ -106,9 +106,8 @@ class Home extends Component {
           </div>
           <div className="commits-intro">
             <div>
-              A bash script updates this list every time I commit
-              changes to my local git repositories. This way you can see what I'm up
-              to daily.
+              A bash script updates this list every time I commit changes to my
+              local git repositories. This way you can see what I'm up to daily.
             </div>
           </div>
           <div className="commit-box">

@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import "./Footer.css";
-import {
-  CopyButton,
-  MailButton
-} from "../Reusable/Reusable.js";
+import { CopyButton, MailButton } from "../Reusable/Reusable.js";
 
 class Footer extends Component {
   state = {
@@ -34,7 +31,7 @@ class Footer extends Component {
         <div className="footer-footer">
           <div className="footer-footer-bye">
             {" "}
-            Made with care by Luis Revilla (2018)
+            Made with care by Luis Revilla (2019)
           </div>
           <div className="back-home">{this.props.home}</div>
         </div>
