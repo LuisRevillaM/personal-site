@@ -27,7 +27,7 @@ const Fo = () => {
           className="cv"
           rel="noopener noreferrer"
           target="_blank"
-          href="https://luisrevilla.website/cv.pdf"
+          href="https://luisrevilla.website/resume.pdf"
         >
           download my resume
         </a>
