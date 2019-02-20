@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import commits from "../commits.json";
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js";
