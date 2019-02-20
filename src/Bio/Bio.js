@@ -23,16 +23,13 @@ class Bio extends Component {
           <div className="bio-text1">
             By 2014, however, my country had started its rapid descent into
             total chaos, so I joined the millions who have left in recent years.
-            I moved to Argentina, a strong hub for sports broadcasting in South
-            America.
+            I moved to Argentina, where I ended up working as a freelance writer
+            for tech startups.
           </div>
           <div className="bio-text1">
-            In late 2015, a friend of mine had a compelling idea for a consumer
-            app. I started collaborating with him on the brand side of things
-            but, at that stage, what the project lacked was more programmers. So
-            I decided to give it a try. I had programmed in college after all.
-            Low level stuff and C, but still. I sat down to learn the modern web
-            stack.
+            Good copy is essential to a great user experience, but after a point
+            I wanted to help my teams beyond words. So I decided to learn web
+            development in 2015.
           </div>
         </div>
         <div className="top-right">
@@ -51,16 +48,23 @@ class Bio extends Component {
         </div>
         <div className="bottom-right">
           <div className="bio-text2">
-            Then I built the frontend of our MVP, in time to apply for a startup
-            accelerator. I filled the application forms and we were admitted
-            (Startup Chile Gen. 16). I left the company for personal reasons by
-            the end of 2017.
+            Later that year, I joined the founding team of a{" "}
+            <a
+              className="link"
+              href="https://crowdswap.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              startup for multi-party bartering
+            </a>{" "}
+            as a front-end developer. We applied for an accelerator and were
+            admitted (Startup Chile Gen. 16).
           </div>{" "}
           <div className="bio-text2">
-            You could say I was falling in love with programming as I was
-            falling in love with my wife, an American woman then living in
-            Argentina. Last March (2018) she found a great job in New York City,
-            so we moved here and got married a couple months after.
+            You could say that, back in 2015, I was falling in love with
+            programming as I was falling in love with my wife, an American woman
+            then living in Argentina. she found a great job in New York, so we
+            moved here and got married a couple months after.
           </div>
           <div className="bio-text2">
             My most recent work is an audio{" "}

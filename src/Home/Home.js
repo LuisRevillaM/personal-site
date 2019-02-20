@@ -15,24 +15,8 @@ import "./Home.css";
 const Fo = () => {
   return (
     <div>
-      Read my{" "}
-      <span>
-        <Link to="/bio" className="cv">
-          bio
-        </Link>
-      </span>{" "}
-      or{" "}
-      <span>
-        <a
-          className="cv"
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://luisrevilla.website/resume.pdf"
-        >
-          download my resume
-        </a>
-      </span>{" "}
-      to learn more about me. We can also grab coffee anytime!
+      If you're in New York and love to talk about web apps, soccer or food, I'm
+      happy to sit down for coffee!
     </div>
   );
 };
@@ -102,12 +86,12 @@ class Home extends Component {
         </div>
         <div className="commits">
           <div className="commits-title">
-            <div>Check out my latest commits!</div>
+            <div>My latest commits!</div>
           </div>
           <div className="commits-intro">
             <div>
               A bash script updates this list every time I commit changes to my
-              local git repositories. This way you can see what I'm up to daily.
+              side-projects.
             </div>
           </div>
           <div className="commit-box">
@@ -162,7 +146,7 @@ class Home extends Component {
             <div>{this.state.btn}</div>
           </button>
         </div>
-        <Footer title="Let's get to work." fo={<Fo />} />
+        <Footer title="Let's grab coffee!" fo={<Fo />} />
       </div>
     );
   }
