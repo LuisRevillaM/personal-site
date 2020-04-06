@@ -40,20 +40,14 @@ class Home extends Component {
         <Header />
         <div className="main">
           {" "}
-          <div className="title">Software developer based in NYC.</div>
+          <div className="title">Software engineer based in New York.</div>
           <div className="sub-title">Specialized in UI engineering.</div>{" "}
         </div>
         <div className="features">
           <div className="feature">
-            <img alt="feature icon" className="check-icon" src={plat} />
-            <div className="feature-text">
-              Author of code running on&nbsp;<span>thousands of devices</span>.
-            </div>
-          </div>
-          <div className="feature">
             <img alt="feature icon" className="check-icon" src={react} />
             <div className="feature-text">
-              2+ years building UIs with&nbsp;<span>React & React Native</span>.
+              3+ years building UIs with&nbsp;<span>React & React Native</span>.
             </div>
           </div>{" "}
           <div className="feature">

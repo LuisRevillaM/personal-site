@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Home/Home.js";
-import Bio from "./Bio/Bio.js";
 import { ScrollToTop } from "./Reusable/Reusable.js";
 
 class App extends Component {
@@ -11,7 +10,6 @@ class App extends Component {
         <ScrollToTop>
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/bio" exact component={Bio} />
           </Switch>
         </ScrollToTop>
       </BrowserRouter>
