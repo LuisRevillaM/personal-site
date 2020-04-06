@@ -40,8 +40,8 @@ class Home extends Component {
         <Header />
         <div className="main">
           {" "}
-          <div className="title">Software engineer based in New York.</div>
-          <div className="sub-title">Specialized in UI engineering.</div>{" "}
+          <div className="title">Software Engineer based in New York.</div>
+          <div className="sub-title">Specialized in web development.</div>{" "}
         </div>
         <div className="features">
           <div className="feature">
@@ -53,8 +53,7 @@ class Home extends Component {
           <div className="feature">
             <img alt="feature icon" className="check-icon" src={backend} />
             <div className="feature-text">
-              <span>Full-stack</span>. Proficient at building & deploying web
-              services.
+              <span>Full-stack</span>. 2+ years working with Node JS and Ruby On Rails.
             </div>
           </div>
           <div className="feature">
