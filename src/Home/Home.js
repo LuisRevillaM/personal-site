@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import commits from "../commits.json";
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js";
-import plat from "../assets/plat.png";
+import remote from "../assets/remote.png";
 import react from "../assets/react.png";
 import design from "../assets/design.png";
 import dialogue from "../assets/dialogue.png";
-import learn from "../assets/learn.png";
 import backend from "../assets/backend.png";
 
 import "./Home.css";
@@ -14,8 +13,7 @@ import "./Home.css";
 const Fo = () => {
   return (
     <div>
-      If you're in New York and love to talk about web apps, soccer or food, I'm
-      happy to sit down for coffee!
+      Shoot me an email if you need a passionate web engineer!
     </div>
   );
 };
@@ -57,9 +55,9 @@ class Home extends Component {
             </div>
           </div>
           <div className="feature">
-            <img alt="feature icon" className="check-icon" src={learn} />
+            <img alt="feature icon" className="check-icon" src={remote} />
             <div className="feature-text">
-              Extraordinary&nbsp;<span>ability to learn</span>.
+              2+ years of <span>remote work</span> experience.
             </div>
           </div>
           <div className="feature">
@@ -138,7 +136,7 @@ class Home extends Component {
             <div>{this.state.btn}</div>
           </button>
         </div>
-        <Footer title="Let's grab coffee!" fo={<Fo />} />
+        <Footer title="Let's grab a virtual coffee!" fo={<Fo />} />
       </div>
     );
   }
