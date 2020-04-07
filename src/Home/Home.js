@@ -51,7 +51,7 @@ class Home extends Component {
           <div className="feature">
             <img alt="feature icon" className="check-icon" src={backend} />
             <div className="feature-text">
-              <span>Full-stack</span>. 2+ years working with Node JS and Ruby On Rails.
+              <span>Full-stack</span>. 2+ years working with technologies like Node and Ruby On Rails.
             </div>
           </div>
           <div className="feature">
