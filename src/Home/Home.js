@@ -112,7 +112,7 @@ class Home extends Component {
                       rel="noopener noreferrer"
                       href={com.remote}
                     >
-                      Remote
+                      Github
                     </a>{" "}
                     <div className="commit-date">
                       <div>{com.date}</div>
