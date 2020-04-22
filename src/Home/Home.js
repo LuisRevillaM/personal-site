@@ -80,7 +80,7 @@ class Home extends Component {
           </div>
           <div className="commits-intro">
             <div>
-              A local post-commit git hook script updates this list every time I commit changes to my
+              A local post-commit git hook updates this list every time I commit changes to my
               side-projects.
             </div>
           </div>
