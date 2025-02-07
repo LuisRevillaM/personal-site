@@ -21,15 +21,15 @@
 .title {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
-  font-size: calc(40px + 0.5vw);
+  font-size: 48px;
   color: #262a2e;
 }
 
 .sub-title {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(14px + 0.5vw);
+  font-size: 18px;
   color: #4b5158;
-  margin-top: 1.4vh;
+  margin-top: 16px;
 }
 
 .features {
@@ -67,8 +67,8 @@
 .feature-text {
   height: 100%;
   font-family: "Open Sans", sans-serif;
-  margin-left: 1.9vh;
-  font-size: calc(14px + 0.5vw);
+  margin-left: 24px;
+  font-size: 16px;
   color: #4b5158;
 }
 
@@ -103,21 +103,21 @@
   color: #262a2e;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
-  margin-bottom: 2vw;
-  font-size: calc(35px + 0.5vw);
+  margin-bottom: 24px;
+  font-size: 40px;
 }
 
 .commits-intro {
   display: flex;
   justify-content: center;
   color: #4b5158;
-  font-size: calc(13px + 0.5vw);
+  font-size: 16px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   box-sizing: border-box;
   width: 100%;
   max-width: 800px;
-  margin: 0 0 4vw 0;
+  margin: 0 0 48px 0;
   line-height: 1.6;
 }
 
@@ -135,17 +135,17 @@
 
 .project-title {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: calc(18px + 0.5vw);
+  font-size: 24px;
   color: #262a2e;
-  margin-bottom: 1.5vw;
+  margin-bottom: 16px;
 }
 
 .project-description {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(13px + 0.5vw);
+  font-size: 16px;
   color: #4b5158;
   line-height: 1.6;
-  margin-bottom: 3vw;
+  margin-bottom: 32px;
 }
 
 .video-placeholder {
@@ -159,7 +159,7 @@
   border-radius: 12px;
   color: #858d95;
   font-family: "Open Sans", sans-serif;
-  font-size: calc(14px + 0.5vw);
+  font-size: 16px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -391,11 +391,11 @@
   }
 
   .title {
-    font-size: calc(36px + 0.5vw);
+    font-size: 40px;
   }
 
   .sub-title {
-    font-size: calc(16px + 0.5vw);
+    font-size: 16px;
   }
 
   .commit-box {
@@ -478,7 +478,7 @@
   }
 
   .project-title {
-    font-size: calc(15px + 0.5vw);
+    font-size: 20px;
     padding-bottom: 4vw;
   }
 
@@ -503,7 +503,7 @@
   }
 
   .commits-title {
-    font-size: calc(25px + 0.5vw);
+    font-size: 32px;
     padding-top: 6vw;
   }
 
@@ -527,7 +527,29 @@
   }
 
   .title {
-    font-size: calc(30px + 0.5vw);
+    font-size: 32px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+  }
+
+  .feature-text {
+    font-size: 15px;
+  }
+
+  .commits-title {
+    font-size: 28px;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  .project-description,
+  .commits-intro,
+  .video-placeholder {
+    font-size: 15px;
   }
 }
 
