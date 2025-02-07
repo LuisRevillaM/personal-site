@@ -83,7 +83,7 @@ class Home extends Component {
         </div>
         <div className="commits">
           <div className="commits-title">
-            <div>What I'm Working On</div>
+            <div>What I'm working on</div>
           </div>
           <div className="commits-intro">
             <div>
