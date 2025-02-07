@@ -93,6 +93,7 @@ class Home extends Component {
             </div>
           </div>
           <div className="project-showcase">
+            <div className="project-title">Project "Ramble"</div>
             <div className="project-description">
               My latest project is a voice-first chat application that
               transcribes voice notes, extracts discrete messages, and
@@ -101,6 +102,10 @@ class Home extends Component {
               meaningful way.
             </div>
             <div className="video-placeholder">[Demo video coming soon]</div>
+            <div className="project-nav">
+              <div className="project-nav-button">←</div>
+              <div className="project-nav-button">→</div>
+            </div>
           </div>
         </div>
         <Footer title="Let's grab a virtual coffee!" fo={<Fo />} />
