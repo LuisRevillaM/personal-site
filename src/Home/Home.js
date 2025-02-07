@@ -11,11 +11,7 @@ import backend from "../assets/backend.png";
 import "./Home.css";
 
 const Fo = () => {
-  return (
-    <div>
-      Shoot me an email if you need a passionate web engineer!
-    </div>
-  );
+  return <div>Shoot me an email if you need a passionate web engineer!</div>;
 };
 
 class Home extends Component {
@@ -23,7 +19,7 @@ class Home extends Component {
     limit: 3,
     btn: "Show more",
     copyMail2: "Copy email",
-    btn2Success: false
+    btn2Success: false,
   };
   componentWillMount() {
     this.commitdata = commits.slice();
@@ -38,32 +34,38 @@ class Home extends Component {
         <Header />
         <div className="main">
           {" "}
-          <div className="title">Software Engineer based in New York.</div>
-          <div className="sub-title">Specialized in web development.</div>{" "}
+          <div className="title">Software Engineer based in Austin, Texas.</div>
+          <div className="sub-title">
+            Specialized in full stack web and mobile applications.
+          </div>{" "}
         </div>
         <div className="features">
           <div className="feature">
-            <img alt="feature icon" className="check-icon" src={react} />
-            <div className="feature-text">
-              3+ years building UIs with&nbsp;<span>React & React Native</span>.
-            </div>
-          </div>{" "}
-          <div className="feature">
             <img alt="feature icon" className="check-icon" src={backend} />
             <div className="feature-text">
-              <span>Full-stack</span>. 2+ years working with technologies like Node.js or Ruby On Rails.
+              <span>Full-stack developer</span> with over 6 years of experience
+              with technologies like Node.js, Ruby On Rails, or Golang. Can and
+              will learn anything.
+            </div>
+          </div>
+          <div className="feature">
+            <img alt="feature icon" className="check-icon" src={react} />
+            <div className="feature-text">
+              6+ years working with{" "}
+              <span>React, React Native, and TypeScript</span>.
             </div>
           </div>
           <div className="feature">
             <img alt="feature icon" className="check-icon" src={remote} />
             <div className="feature-text">
-              2+ years of <span>remote work</span> experience.
+              Over 7 years of <span>remote work</span> experience.
             </div>
           </div>
           <div className="feature">
             <img alt="feature icon" className="check-icon" src={design} />
             <div className="feature-text">
-              Strong&nbsp;<span>intuition for design</span>.
+              <span>Rethinking systems and UX with AI</span>. Strong intuition
+              for design.
             </div>
           </div>
           <div className="feature">
@@ -76,12 +78,13 @@ class Home extends Component {
         </div>
         <div className="commits">
           <div className="commits-title">
-            <div>My latest commits!</div>
+            <div>What I'm Working On</div>
           </div>
           <div className="commits-intro">
             <div>
-              A local post-commit git hook updates this list every time I commit changes to my
-              side-projects.
+              Currently working full-time as a Software Engineer at
+              PolicyGenius, an insurance marketplace. Here are some of my recent
+              side projects:
             </div>
           </div>
           <div className="commit-box">
