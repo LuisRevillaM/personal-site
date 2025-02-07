@@ -80,7 +80,7 @@
   background-color: #ffffff;
   grid-column: 1 / 3;
   grid-row: 3/4;
-  padding: 6vw 5vw;
+  padding: 48px 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,7 +117,7 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 800px;
-  margin: 0 0 48px 0;
+  margin: 0 0 40px 0;
   line-height: 1.6;
 }
 
@@ -127,7 +127,7 @@
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 3vw 4vw;
+  padding: 32px 40px;
   background-color: #fafafa;
   border-radius: 16px;
   position: relative;
@@ -162,6 +162,7 @@
   font-size: 16px;
   transition: all 0.3s ease;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .video-placeholder:hover {
@@ -431,7 +432,7 @@
 
   .commits {
     grid-row: 4/5;
-    padding: 8vw 5vw;
+    padding: 40px 5vw;
   }
 
   .commits::before {
@@ -440,7 +441,7 @@
   }
 
   .project-showcase {
-    padding: 4vw 5vw;
+    padding: 24px 20px;
   }
 
   .project-title,
