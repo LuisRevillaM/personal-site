@@ -10,16 +10,6 @@ class Footer extends Component {
   };
 
   render() {
-    let mail;
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      mail = <MailButton />;
-    } else {
-      mail = <CopyButton />;
-    }
     return (
       <div className="footer">
         <div className="footer-title">{this.props.title}</div>
@@ -27,7 +17,7 @@ class Footer extends Component {
           {this.props.fo}
           <div />
         </div>
-        {mail}
+        <CopyButton />
         <div className="footer-footer">
           <div className="footer-footer-bye">
             {" "}

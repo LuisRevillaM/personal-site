@@ -11,6 +11,9 @@ import { CopyButton } from "../Reusable/Reusable.js";
 
 import "./Home.css";
 
+/**
+ * Simple functional component to inject custom text into the Footer.
+ */
 const Fo = () => {
   return (
     <div>
@@ -27,24 +30,28 @@ class Home extends Component {
     copyMail2: "Copy email",
     btn2Success: false,
   };
+
+  commitdata;
+
   componentWillMount() {
+    // Reverse commits so newest appear on top
     this.commitdata = commits.slice();
     this.commitdata.reverse();
   }
-
-  commitdata;
 
   render() {
     return (
       <div className="main-grid">
         <Header />
+        {/* Main Intro Section */}
         <div className="main">
-          {" "}
           <div className="title">Software Engineer based in Austin, Texas.</div>
           <div className="sub-title">
             Specialized in full-stack web and mobile applications.
-          </div>{" "}
+          </div>
         </div>
+
+        {/* Features Section */}
         <div className="features">
           <div className="feature">
             <img alt="feature icon" className="check-icon" src={backend} />
@@ -81,6 +88,8 @@ class Home extends Component {
             </div>
           </div>
         </div>
+
+        {/* Commits / Projects Section */}
         <div className="commits">
           <div className="commits-title">
             <div>What I'm working on</div>
@@ -92,6 +101,8 @@ class Home extends Component {
               state-of-the-art AI-assisted coding and AI-enabled applications.
             </div>
           </div>
+
+          {/* Project Showcase */}
           <div className="project-showcase">
             <div className="project-title">Project "Ramble"</div>
             <div className="project-description">
@@ -108,6 +119,8 @@ class Home extends Component {
             </div>
           </div>
         </div>
+
+        {/* Footer Section */}
         <Footer title="Let's grab a virtual coffee!" fo={<Fo />} />
       </div>
     );
