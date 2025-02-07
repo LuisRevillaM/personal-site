@@ -7,11 +7,17 @@ import react from "../assets/react.png";
 import design from "../assets/design.png";
 import dialogue from "../assets/dialogue.png";
 import backend from "../assets/backend.png";
+import { CopyButton } from "../Reusable/Reusable.js";
 
 import "./Home.css";
 
 const Fo = () => {
-  return <div>Shoot me an email if you need a passionate web engineer!</div>;
+  return (
+    <div>
+      Looking for a technically strong, product-and-outcome-oriented engineer?
+      Shoot me an email.
+    </div>
+  );
 };
 
 class Home extends Component {
@@ -36,29 +42,28 @@ class Home extends Component {
           {" "}
           <div className="title">Software Engineer based in Austin, Texas.</div>
           <div className="sub-title">
-            Specialized in full stack web and mobile applications.
+            Specialized in full-stack web and mobile applications.
           </div>{" "}
         </div>
         <div className="features">
           <div className="feature">
             <img alt="feature icon" className="check-icon" src={backend} />
             <div className="feature-text">
-              <span>Full-stack developer</span> with over 6 years of experience
-              with technologies like Node.js, Ruby On Rails, or Golang. Can and
-              will learn anything.
+              <span>Full-stack</span>. Over 9 years of experience. Node.js, Ruby
+              On Rails, Golang. Can and will learn anything.
             </div>
           </div>
           <div className="feature">
             <img alt="feature icon" className="check-icon" src={react} />
             <div className="feature-text">
-              6+ years working with{" "}
-              <span>React, React Native, and TypeScript</span>.
+              6 years working with <span>React and TypeScript</span>.
             </div>
           </div>
           <div className="feature">
             <img alt="feature icon" className="check-icon" src={remote} />
             <div className="feature-text">
-              Over 7 years of <span>remote work</span> experience.
+              <span>Experienced remote worker</span>. Happy to come to the
+              office if you're based in Austin!
             </div>
           </div>
           <div className="feature">
@@ -82,62 +87,21 @@ class Home extends Component {
           </div>
           <div className="commits-intro">
             <div>
-              Currently working full-time as a Software Engineer at
-              PolicyGenius, an insurance marketplace. Here are some of my recent
-              side projects:
+              I'm a full-time Software Engineer at Policygenius, an insurance
+              marketplace. In my free time, I am exploring the capabilities of
+              state-of-the-art AI-assisted coding and AI-enabled applications.
             </div>
           </div>
-          <div className="commit-box">
-            {this.commitdata.map((com, i) => {
-              if (i >= this.state.limit) {
-                return null;
-              }
-              let date = new Date(com.date);
-              return (
-                <div key={i} className="commit">
-                  <div className="project-title">
-                    {com.project}{" "}
-                    {Date.now() < date.getTime() + 5 * 3600 * 1000 ? (
-                      <div className="fresh">
-                        <div>new!</div>
-                      </div>
-                    ) : null}
-                  </div>
-                  <div className="commit-message">
-                    <span>Message:</span> "{com.commit}"
-                  </div>
-                  <div className="working-branch">
-                    <span>On branch:</span> "{com.branch}"
-                  </div>
-                  <div className="git-remote">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={com.remote}
-                    >
-                      Github
-                    </a>{" "}
-                    <div className="commit-date">
-                      <div>{com.date}</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="project-showcase">
+            <div className="project-description">
+              My latest project is a voice-first chat application that
+              transcribes voice notes, extracts discrete messages, and
+              automatically categorizes them by topic for easy filtering. The
+              app uses AI to identify tasks and organize conversations in a
+              meaningful way.
+            </div>
+            <div className="video-placeholder">[Demo video coming soon]</div>
           </div>
-
-          <button
-            className="commits-btn"
-            onClick={() => {
-              if (this.state.limit === 3) {
-                this.setState({ limit: 10, btn: "Show less" });
-              } else if (this.state.limit === 10) {
-                this.setState({ limit: 3, btn: "Show more" });
-              }
-            }}
-          >
-            <div>{this.state.btn}</div>
-          </button>
         </div>
         <Footer title="Let's grab a virtual coffee!" fo={<Fo />} />
       </div>

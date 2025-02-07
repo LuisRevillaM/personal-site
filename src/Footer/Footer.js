@@ -6,7 +6,7 @@ class Footer extends Component {
   state = {
     copyMail2: "Copy email",
     btn2Success: false,
-    device: "desktop"
+    device: "desktop",
   };
 
   render() {
@@ -31,7 +31,7 @@ class Footer extends Component {
         <div className="footer-footer">
           <div className="footer-footer-bye">
             {" "}
-            Made with care by Luis Revilla (2020)
+            Made with care by Luis Revilla (2025)
           </div>
           <div className="back-home">{this.props.home}</div>
         </div>

@@ -33,14 +33,15 @@
 }
 
 .header .copy-btn {
-  padding: 0.35vw 0.35vw;
+  padding: 8px 16px;
+  min-width: 120px;
 }
 
 .copy-btn div {
   text-align: center;
   width: 100%;
   font-weight: bold;
-  font-size: calc(8px + 0.5vw);
+  font-size: 14px;
 }
 
 .btn-success {
@@ -61,7 +62,8 @@
     padding: 2.5vh 5vw 2.5vh 5vw;
   }
   .header .copy-btn {
-    width: 10vw;
+    padding: 8px 16px;
+    min-width: 110px;
   }
 
   .name {
@@ -71,12 +73,12 @@
 
 @media screen and (max-width: 440px) {
   .header .copy-btn {
-    padding: 0.8vw 0.8vw;
-    width: 11.6vw;
+    padding: 6px 12px;
+    min-width: 100px;
   }
 
   .header .copy-btn div {
-    font-size: calc(7px + 2vw);
+    font-size: 13px;
   }
 }
 
