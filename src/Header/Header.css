@@ -45,9 +45,8 @@
 }
 
 .btn-success {
-  font-weight: bold;
-  color: hsl(0, 0%, 100%, 0.9);
-  background-color: #fc0000;
+  background-color: #262a2e;
+  border: 3px solid #262a2e;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
