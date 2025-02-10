@@ -15,7 +15,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -b master -d build",
+    "deploy:parent": "export NODE_OPTIONS=--openssl-legacy-provider && npm run build && cd ../luisrevillam.github.io && echo '[build]\n  base = \"/\"\n  publish = \".\"\n  command = \"\"\n\n[build.environment]\n  RUBY_VERSION = \"3.1.0\"' > netlify.toml && rm -rf ./* && echo '[build]\n  base = \"/\"\n  publish = \".\"\n  command = \"\"\n\n[build.environment]\n  RUBY_VERSION = \"3.1.0\"' > netlify.toml && cp -r ../personal-site/build/* ./ && git add . && git diff --staged --quiet || git commit -m 'Update site' && git push origin master"
   },
   "eslintConfig": {
     "extends": "react-app"
