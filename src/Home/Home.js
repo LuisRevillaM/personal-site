@@ -7,6 +7,7 @@ import react from "../assets/react.png";
 import design from "../assets/design.png";
 import dialogue from "../assets/dialogue.png";
 import backend from "../assets/backend.png";
+import landing from "../assets/landing.png";
 import { CopyButton } from "../Reusable/Reusable.js";
 
 import "./Home.css";
@@ -112,7 +113,19 @@ class Home extends Component {
               app uses AI to identify tasks and organize conversations in a
               meaningful way.
             </div>
-            <div className="video-placeholder">[Demo video coming soon]</div>
+            <a
+              href="https://thinktalkapp.com/demo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="demo-link"
+            >
+              <img
+                src={landing}
+                alt="Ramble App Landing Page"
+                className="project-image"
+              />
+              <div className="try-demo">Try the demo →</div>
+            </a>
             <div className="project-nav">
               <div className="project-nav-button">←</div>
               <div className="project-nav-button">→</div>
