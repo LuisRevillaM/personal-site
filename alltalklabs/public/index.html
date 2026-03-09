@@ -6,320 +6,305 @@
     <title>All Talk Labs</title>
     <meta
       name="description"
-      content="All Talk Labs presentation on agentic systems, software authorship, and the new computer."
+      content="All Talk Labs. Speech can become artifacts, tools, art."
     />
     <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.js"></script>
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#home">All Talk Labs</a>
+      <a class="brand" href="#cover">All Talk Labs</a>
       <nav class="tabs" aria-label="Primary">
-        <a class="tab" href="#home">Home</a>
-        <a class="tab" href="#presentation">Presentation</a>
+        <a class="tab is-active" href="#cover" data-tab-link="cover">Cover</a>
+        <a class="tab" href="#presentation" data-tab-link="presentation">Presentation</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-copy">
-          <p class="eyebrow">All Talk Labs / Presentation</p>
-          <h1>The New Computer</h1>
-          <p class="statement">
-            Agentic systems are turning software from a specialist trade into a
-            medium ordinary people can author.
-          </p>
-          <p class="detail">
-            A 10-slide arc on reasoning models, feedback loops, Claude Code,
-            OpenClaw, and why the real shift is not just automation but
-            authorship.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#presentation">Read the presentation</a>
-            <a class="button button-secondary" href="#slide-08">Jump to the thesis</a>
+    <main class="site-main">
+      <section class="site-panel site-panel-cover" id="cover" data-panel="cover">
+        <div class="page-shell">
+          <p class="eyebrow">Coming soon</p>
+          <h1>All Talk Labs</h1>
+          <p class="statement">Speech can become artifacts, tools, art.</p>
+          <p class="detail">Language, models, tools.</p>
+          <div class="hero-actions cover-actions">
+            <a class="button button-primary" href="#presentation">Read the thesis</a>
           </div>
-        </div>
-
-        <div class="hero-panel" aria-label="Deck outline">
-          <p class="hero-panel-label">Deck Outline</p>
-          <ol class="hero-outline">
-            <li>Reasoning substrate</li>
-            <li>Agentic loop</li>
-            <li>Claude Code as proof</li>
-            <li>The environment as surface area</li>
-            <li>Outcome pursuit</li>
-            <li>OpenClaw beyond the coding box</li>
-            <li>The old asymmetry</li>
-            <li>Software as a creative medium</li>
-            <li>The new literacy</li>
-            <li>Authorship at scale</li>
-          </ol>
         </div>
       </section>
 
-      <section class="deck-intro" id="presentation">
-        <div class="deck-intro-copy">
-          <p class="eyebrow">Presentation</p>
-          <h2>Scroll deck</h2>
-          <p>
-            This version sharpens the original thesis. The point is not only
-            that agents make highly specific software viable. It is that they
-            widen the funnel for creation across the whole spectrum: personal
-            tools, strange experiments, products with extreme utility, and even
-            breakout hits built by people whose edge is judgment rather than
-            formal engineering pedigree.
-          </p>
-        </div>
-      </section>
-
-      <section class="slides" aria-label="Presentation slides">
-        <article class="slide" id="slide-01">
-          <div class="slide-copy">
-            <p class="slide-number">01</p>
-            <h2>The Model as a Reasoning Substrate</h2>
-            <p class="slide-kicker">
-              The first shift was not better autocomplete. It was general
-              reasoning with context.
-            </p>
+      <section
+        class="site-panel site-panel-presentation"
+        id="presentation"
+        data-panel="presentation"
+        hidden
+      >
+        <section class="deck-intro">
+          <div class="deck-intro-copy">
+            <p class="eyebrow">Presentation</p>
+            <h2>The New Computer</h2>
             <p>
-              Large language models arrived as something genuinely different:
-              not just search, not just retrieval, but a system that could take
-              context and produce useful thought. Early adoption framed them as
-              assistants. The deeper implication was that a model able to reason
-              about a problem could also reason about what to do next.
+              A 10-slide thesis on agentic systems, software authorship, and
+              why the real shift is not just automation but a new creative
+              platform for normal thinking humans with taste, judgment, and
+              something to build.
             </p>
           </div>
-          <figure class="slide-media">
-            <img
-              src="/images/presentation/slide-01-reasoning-engine.png"
-              alt="Abstract editorial illustration of a reasoning engine formed from layered glass, paper, and circuitry."
-            />
-          </figure>
-        </article>
+        </section>
 
-        <article class="slide slide-reverse" id="slide-02">
-          <div class="slide-copy">
-            <p class="slide-number">02</p>
-            <h2>The Agentic Loop</h2>
-            <p class="slide-kicker">
-              Reasoning became more powerful once it lived inside a feedback
-              loop.
-            </p>
-            <p>
-              A model that can answer a question can also inspect the result of
-              an action, update its understanding, and choose the next move.
-              Observe, decide, act, inspect, repeat. That loop is what turned
-              the model from a respondent into the core of an agent.
-            </p>
-          </div>
-          <figure class="slide-media">
-            <img
-              src="/images/presentation/slide-02-agentic-loop.png"
-              alt="Tactile editorial composition showing a loop of tools and feedback around an intelligent core."
-              loading="lazy"
-            />
-          </figure>
-        </article>
+        <section class="slides" aria-label="Presentation slides">
+          <article class="slide" id="slide-01">
+            <div class="slide-copy">
+              <p class="slide-number">01</p>
+              <h2>The Model as a Reasoning Substrate</h2>
+              <p class="slide-kicker">
+                The first shift was not better autocomplete. It was general
+                reasoning with context.
+              </p>
+              <p>
+                Large language models arrived as something genuinely different:
+                not just search, not just retrieval, but a system that could
+                take context and produce useful thought. Early adoption framed
+                them as assistants. The deeper implication was that a model able
+                to reason about a problem could also reason about what to do
+                next.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-01-reasoning-engine.png"
+                alt="Abstract editorial illustration of a reasoning engine formed from layered glass, paper, and circuitry."
+              />
+            </figure>
+          </article>
 
-        <article class="slide" id="slide-03">
-          <div class="slide-copy">
-            <p class="slide-number">03</p>
-            <h2>Claude Code as the First Visceral Proof</h2>
-            <p class="slide-kicker">
-              Not the first underlying idea, but the first experience that made
-              the shift undeniable to a broad audience.
-            </p>
-            <p>
-              Claude Code condensed a lot of scattered research and tooling into
-              one unmistakable experience: an AI could read a real codebase,
-              form a plan, make changes, run the code, hit errors, recover, and
-              keep going across many steps. It felt less like asking for help
-              and more like watching software pursue a result.
-            </p>
-          </div>
-          <figure class="slide-media">
-            <img
-              src="/images/presentation/slide-03-claude-code.png"
-              alt="Editorial desk scene with code, terminal output, and test feedback implying an autonomous coding agent at work."
-              loading="lazy"
-            />
-          </figure>
-        </article>
+          <article class="slide slide-reverse" id="slide-02">
+            <div class="slide-copy">
+              <p class="slide-number">02</p>
+              <h2>The Agentic Loop</h2>
+              <p class="slide-kicker">
+                Reasoning became more powerful once it lived inside a feedback
+                loop.
+              </p>
+              <p>
+                A model that can answer a question can also inspect the result
+                of an action, update its understanding, and choose the next
+                move. Observe, decide, act, inspect, repeat. That loop is what
+                turned the model from a respondent into the core of an agent.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-02-agentic-loop.png"
+                alt="Tactile editorial composition showing a loop of tools and feedback around an intelligent core."
+                loading="lazy"
+              />
+            </figure>
+          </article>
 
-        <article class="slide slide-reverse" id="slide-04">
-          <div class="slide-copy">
-            <p class="slide-number">04</p>
-            <h2>The Environment Becomes the Surface Area</h2>
-            <p class="slide-kicker">
-              Capability is gated not only by model quality, but by what the
-              agent can reliably touch.
-            </p>
-            <p>
-              A terminal, filesystem, browser, APIs, design tools, schedulers,
-              and permissions dramatically expand what an agent can do. The
-              important boundary stops being what the model was designed for and
-              becomes what exists in the environment and how effectively the
-              system can use it.
-            </p>
-          </div>
-          <figure class="slide-media">
-            <img
-              src="/images/presentation/slide-04-environment.png"
-              alt="A composed collage of terminal, browser, files, design canvas, and automation tools surrounding a central intelligence."
-              loading="lazy"
-            />
-          </figure>
-        </article>
+          <article class="slide" id="slide-03">
+            <div class="slide-copy">
+              <p class="slide-number">03</p>
+              <h2>Claude Code as the First Visceral Proof</h2>
+              <p class="slide-kicker">
+                Not the first underlying idea, but the first experience that
+                made the shift undeniable to a broad audience.
+              </p>
+              <p>
+                Claude Code condensed a lot of scattered research and tooling
+                into one unmistakable experience: an AI could read a real
+                codebase, form a plan, make changes, run the code, hit errors,
+                recover, and keep going across many steps. It felt less like
+                asking for help and more like watching software pursue a result.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-03-claude-code.png"
+                alt="Editorial desk scene with code, terminal output, and test feedback implying an autonomous coding agent at work."
+                loading="lazy"
+              />
+            </figure>
+          </article>
 
-        <article class="slide" id="slide-05">
-          <div class="slide-copy">
-            <p class="slide-number">05</p>
-            <h2>The Ralph Wiggum Signal</h2>
-            <p class="slide-kicker">
-              The meme was not the innovation. It was evidence that people had
-              begun to trust agents with outcomes.
-            </p>
-            <p>
-              You could define a goal, point the agent at a PRD, let git act as
-              working memory, and come back to something materially closer to
-              the thing you wanted. That does not mean autonomous software
-              creation is solved. It means the center of gravity has moved from
-              step execution toward outcome pursuit.
-            </p>
-          </div>
-          <figure class="slide-media">
-            <img
-              src="/images/presentation/slide-05-outcomes.png"
-              alt="Presentation illustration showing a product brief transforming into a working prototype through iterative checkpoints."
-              loading="lazy"
-            />
-          </figure>
-        </article>
+          <article class="slide slide-reverse" id="slide-04">
+            <div class="slide-copy">
+              <p class="slide-number">04</p>
+              <h2>The Environment Becomes the Surface Area</h2>
+              <p class="slide-kicker">
+                Capability is gated not only by model quality, but by what the
+                agent can reliably touch.
+              </p>
+              <p>
+                A terminal, filesystem, browser, APIs, design tools,
+                schedulers, and permissions dramatically expand what an agent
+                can do. The important boundary stops being what the model was
+                designed for and becomes what exists in the environment and how
+                effectively the system can use it.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-04-environment.png"
+                alt="A composed collage of terminal, browser, files, design canvas, and automation tools surrounding a central intelligence."
+                loading="lazy"
+              />
+            </figure>
+          </article>
 
-        <article class="slide slide-reverse" id="slide-06">
-          <div class="slide-copy">
-            <p class="slide-number">06</p>
-            <h2>OpenClaw and the Move Beyond the Coding Box</h2>
-            <p class="slide-kicker">
-              Once the agent gets OS-level primitives, it stops looking like a
-              coding assistant with extras.
-            </p>
-            <p>
-              Scheduling, background execution, long-term memory, dynamic tool
-              composition, and multi-context work turn the agent into a
-              general-purpose computational actor. The software is no longer
-              just a product used by intelligence. It becomes intelligence that
-              composes products, tools, and workflows on demand.
-            </p>
-          </div>
-          <figure class="slide-media">
-            <img
-              src="/images/presentation/slide-06-openclaw.png"
-              alt="A refined systems illustration of operating-system-level tools, memory, scheduling, and APIs composed into one agentic environment."
-              loading="lazy"
-            />
-          </figure>
-        </article>
+          <article class="slide" id="slide-05">
+            <div class="slide-copy">
+              <p class="slide-number">05</p>
+              <h2>The Ralph Wiggum Signal</h2>
+              <p class="slide-kicker">
+                The meme was not the innovation. It was evidence that people had
+                begun to trust agents with outcomes.
+              </p>
+              <p>
+                You could define a goal, point the agent at a PRD, let git act
+                as working memory, and come back to something materially closer
+                to the thing you wanted. That does not mean autonomous software
+                creation is solved. It means the center of gravity has moved
+                from step execution toward outcome pursuit.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-05-outcomes.png"
+                alt="Presentation illustration showing a product brief transforming into a working prototype through iterative checkpoints."
+                loading="lazy"
+              />
+            </figure>
+          </article>
 
-        <article class="slide" id="slide-07">
-          <div class="slide-copy">
-            <p class="slide-number">07</p>
-            <h2>The Broken Asymmetry of the Old Computer</h2>
-            <p class="slide-kicker">
-              The computer was a universal creative machine, except for the
-              medium it actually runs on.
-            </p>
-            <p>
-              For decades, you could write, record, design, and publish without
-              becoming a specialist. Software was the exception. Making it at a
-              meaningful level usually demanded years of training, a high
-              tolerance for abstraction, and serious time. Billions could
-              consume software. Very few could shape it directly.
-            </p>
-          </div>
-          <figure class="slide-media">
-            <img
-              src="/images/presentation/slide-07-windows-95-moment.png"
-              alt="A bedroom creator workspace that blends nostalgic personal computing with contemporary creative tools."
-              loading="lazy"
-            />
-          </figure>
-        </article>
+          <article class="slide slide-reverse" id="slide-06">
+            <div class="slide-copy">
+              <p class="slide-number">06</p>
+              <h2>OpenClaw and the Move Beyond the Coding Box</h2>
+              <p class="slide-kicker">
+                Once the agent gets OS-level primitives, it stops looking like a
+                coding assistant with extras.
+              </p>
+              <p>
+                Scheduling, background execution, long-term memory, dynamic tool
+                composition, and multi-context work turn the agent into a
+                general-purpose computational actor. The software is no longer
+                just a product used by intelligence. It becomes intelligence
+                that composes products, tools, and workflows on demand.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-06-openclaw.png"
+                alt="A refined systems illustration of operating-system-level tools, memory, scheduling, and APIs composed into one agentic environment."
+                loading="lazy"
+              />
+            </figure>
+          </article>
 
-        <article class="slide slide-reverse" id="slide-08">
-          <div class="slide-copy">
-            <p class="slide-number">08</p>
-            <h2>Software Becomes a Creative Medium</h2>
-            <p class="slide-kicker">
-              The shift is not only toward hyper-specific tools. It is toward
-              abundance across the whole spectrum.
-            </p>
-            <p>
-              Agents make deeply personal software viable, but that is only one
-              end of the curve. The same collapse in creation cost also enables
-              products with massive utility, viral spread, and fast waves of
-              imitation to be built by normal thinking humans whose real edge is
-              taste, insight, persistence, and timing.
-            </p>
-          </div>
-          <figure class="slide-media">
-            <img
-              src="/images/presentation/slide-08-software-medium.png"
-              alt="Editorial illustration of ordinary people turning ideas into polished software products and experimental applications."
-              loading="lazy"
-            />
-          </figure>
-        </article>
+          <article class="slide" id="slide-07">
+            <div class="slide-copy">
+              <p class="slide-number">07</p>
+              <h2>The Broken Asymmetry of the Old Computer</h2>
+              <p class="slide-kicker">
+                The computer was a universal creative machine, except for the
+                medium it actually runs on.
+              </p>
+              <p>
+                For decades, you could write, record, design, and publish
+                without becoming a specialist. Software was the exception.
+                Making it at a meaningful level usually demanded years of
+                training, a high tolerance for abstraction, and serious time.
+                Billions could consume software. Very few could shape it
+                directly.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-07-windows-95-moment.png"
+                alt="A bedroom creator workspace that blends nostalgic personal computing with contemporary creative tools."
+                loading="lazy"
+              />
+            </figure>
+          </article>
 
-        <article class="slide" id="slide-09">
-          <div class="slide-copy">
-            <p class="slide-number">09</p>
-            <h2>The New Literacy Is Specification</h2>
-            <p class="slide-kicker">
-              Natural language lowers the interface barrier, but it does not
-              remove the need for rigor.
-            </p>
-            <p>
-              The old computer trained people to navigate menus and memorize
-              interfaces. The new computer raises the literacy layer upward:
-              specifying intent, setting constraints, judging output, and
-              refining systems through dialogue. Clear thinking matters more,
-              not less, when the machine can build.
-            </p>
-          </div>
-          <figure class="slide-media">
-            <img
-              src="/images/presentation/slide-09-new-literacy.png"
-              alt="A calm editorial scene of a person refining software through dialogue, drafts, diagrams, and constraints."
-              loading="lazy"
-            />
-          </figure>
-        </article>
+          <article class="slide slide-reverse" id="slide-08">
+            <div class="slide-copy">
+              <p class="slide-number">08</p>
+              <h2>Software Becomes a Creative Medium</h2>
+              <p class="slide-kicker">
+                The shift is not only toward hyper-specific tools. It is toward
+                abundance across the whole spectrum.
+              </p>
+              <p>
+                Agents make deeply personal software viable, but that is only
+                one end of the curve. The same collapse in creation cost also
+                enables products with massive utility, viral spread, and fast
+                waves of imitation to be built by normal thinking humans whose
+                real edge is taste, insight, persistence, and timing.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-08-software-medium.png"
+                alt="Editorial illustration of ordinary people turning ideas into polished software products and experimental applications."
+                loading="lazy"
+              />
+            </figure>
+          </article>
 
-        <article class="slide slide-reverse" id="slide-10">
-          <div class="slide-copy">
-            <p class="slide-number">10</p>
-            <h2>The Platform Shift Is Authorship at Scale</h2>
-            <p class="slide-kicker">
-              Automation is the early business story. Authorship is the bigger
-              cultural story.
-            </p>
-            <p>
-              When the cost of making software drops far enough, the frontier is
-              not just efficiency. It is expression. You get strange one-person
-              systems, serious utility software, memetic products, breakout
-              companies, and long tails of copycats built by people who can now
-              ship with leverage that once required full teams. That is why this
-              feels like a platform shift rather than a feature wave.
-            </p>
-          </div>
-          <figure class="slide-media">
-            <img
-              src="/images/presentation/slide-10-authorship.png"
-              alt="A panoramic composition of many categories of software emerging from individual creators."
-              loading="lazy"
-            />
-          </figure>
-        </article>
+          <article class="slide" id="slide-09">
+            <div class="slide-copy">
+              <p class="slide-number">09</p>
+              <h2>The New Literacy Is Specification</h2>
+              <p class="slide-kicker">
+                Natural language lowers the interface barrier, but it does not
+                remove the need for rigor.
+              </p>
+              <p>
+                The old computer trained people to navigate menus and memorize
+                interfaces. The new computer raises the literacy layer upward:
+                specifying intent, setting constraints, judging output, and
+                refining systems through dialogue. Clear thinking matters more,
+                not less, when the machine can build.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-09-new-literacy.png"
+                alt="A calm editorial scene of a person refining software through dialogue, drafts, diagrams, and constraints."
+                loading="lazy"
+              />
+            </figure>
+          </article>
+
+          <article class="slide slide-reverse" id="slide-10">
+            <div class="slide-copy">
+              <p class="slide-number">10</p>
+              <h2>The Platform Shift Is Authorship at Scale</h2>
+              <p class="slide-kicker">
+                Automation is the early business story. Authorship is the bigger
+                cultural story.
+              </p>
+              <p>
+                When the cost of making software drops far enough, the frontier
+                is not just efficiency. It is expression. You get strange
+                one-person systems, serious utility software, memetic products,
+                breakout companies, and long tails of copycats built by people
+                who can now ship with leverage that once required full teams.
+                That is why this feels like a platform shift rather than a
+                feature wave.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-10-authorship.png"
+                alt="A panoramic composition of many categories of software emerging from individual creators."
+                loading="lazy"
+              />
+            </figure>
+          </article>
+        </section>
       </section>
     </main>
   </body>
