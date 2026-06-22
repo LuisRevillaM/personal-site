@@ -3,104 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>All Talk Labs | Speech becomes artifacts</title>
+    <title>All Talk Labs</title>
     <meta
       name="description"
-      content="All Talk Labs turns language, models, and tools into working software, visual systems, and strange useful things."
+      content="All Talk Labs. Speech can become artifacts, tools, art."
     />
-    <meta name="theme-color" content="#f5f7f1" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="preload" as="image" href="/images/brand/hero-speech-engine-v1.webp" type="image/webp" />
     <link rel="stylesheet" href="/styles.css" />
     <script type="module" src="/app.js"></script>
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#cover" aria-label="All Talk Labs home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48" role="img">
-            <path class="mark-wave" d="M8 25h4.7c2.1 0 1.9-6.4 4.1-6.4 2.5 0 2.2 12.8 4.8 12.8 3 0 2.7-19.7 5.7-19.7 2.6 0 2.3 13.3 5 13.3h1.4" />
-            <path class="mark-arm" d="M31 10.8a13.2 13.2 0 0 1 0 26.4" />
-            <rect class="mark-dot" x="34.6" y="15.6" width="5.2" height="5.2" rx="1.15" />
-            <rect class="mark-dot" x="38.2" y="22" width="5.2" height="5.2" rx="1.15" />
-            <rect class="mark-dot" x="34.6" y="28.4" width="5.2" height="5.2" rx="1.15" />
-          </svg>
-        </span>
-        <span class="brand-wordmark">All Talk Labs</span>
-      </a>
-
+      <a class="brand" href="#cover">All Talk Labs</a>
       <nav class="tabs" aria-label="Primary">
-        <a class="tab is-active" href="#cover" data-tab-link="cover">Studio</a>
-        <a class="tab" href="#presentation" data-tab-link="presentation">Thesis</a>
+        <a class="tab is-active" href="#cover" data-tab-link="cover">Cover</a>
+        <a class="tab" href="#presentation" data-tab-link="presentation">Presentation</a>
       </nav>
     </header>
 
     <main class="site-main">
       <section class="site-panel site-panel-cover" id="cover" data-panel="cover">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Language-to-artifact studio</p>
-            <h1>Speech becomes artifacts.</h1>
-            <p class="statement">
-              A studio for turning language, models, and tools into working
-              software, visual systems, and strange useful things.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#presentation">
-                <span>Read the thesis</span>
-                <span aria-hidden="true">&rarr;</span>
-              </a>
-              <a class="button button-secondary" href="#lab-notes">View lab notes</a>
-            </div>
+        <div class="page-shell">
+          <p class="eyebrow">Coming soon</p>
+          <h1>All Talk Labs</h1>
+          <p class="statement">Speech can become artifacts, tools, art.</p>
+          <p class="detail">Language, models, tools.</p>
+          <div class="hero-actions cover-actions">
+            <a class="button button-primary" href="#presentation">Read the thesis</a>
           </div>
-
-          <figure class="hero-visual">
-            <picture>
-              <source srcset="/images/brand/hero-speech-engine-v1.webp" type="image/webp" />
-              <img
-                src="/images/brand/hero-speech-engine-v1.webp"
-                width="1672"
-                height="941"
-                decoding="async"
-                fetchpriority="high"
-                alt="A luminous speech waveform entering a compact lab machine and becoming software-like artifacts."
-              />
-            </picture>
-          </figure>
         </div>
-
-        <section class="proof-rail" aria-label="All Talk Labs focus areas">
-          <article>
-            <p class="proof-kicker">01</p>
-            <h2>Agentic systems</h2>
-            <p>Loops, state, tools, and checks that keep work moving until the outcome is real.</p>
-          </article>
-          <article>
-            <p class="proof-kicker">02</p>
-            <h2>Software authorship</h2>
-            <p>Specifications that let more people shape software without flattening taste or rigor.</p>
-          </article>
-          <article>
-            <p class="proof-kicker">03</p>
-            <h2>Generated artifacts</h2>
-            <p>Images, interfaces, documents, and prototypes treated as first-class materials.</p>
-          </article>
-        </section>
-
-        <section class="lab-notes" id="lab-notes" aria-labelledby="lab-notes-heading">
-          <div class="section-heading">
-            <p class="eyebrow">Lab notes</p>
-            <h2 id="lab-notes-heading">The working thesis.</h2>
-          </div>
-          <div class="notes-grid">
-            <p>
-              The old computer made software something billions could use and
-              few could author. The new computer makes intent executable when
-              the surrounding system can inspect, act, remember, and verify.
-            </p>
-            <a class="text-link" href="#presentation">Open the 10-slide argument</a>
-          </div>
-        </section>
       </section>
 
       <section
@@ -110,144 +40,92 @@
         hidden
       >
         <section class="deck-intro">
-          <div class="section-heading">
+          <div class="deck-intro-copy">
             <p class="eyebrow">Presentation</p>
             <h2>The New Computer</h2>
-          </div>
-          <div class="deck-intro-copy">
             <p>
-              A 10-slide thesis on the platform shift underneath agentic
-              systems: software used to be scarce because implementation was
-              the bottleneck. Agents move that bottleneck toward intent,
-              judgment, and verification.
-            </p>
-            <p class="deck-premise">
-              The story is not only faster programming. It is a new
-              relationship between people and software: language becomes a way
-              to specify work, environments expose what agents can touch, and
-              checks decide whether the result is real.
+              A 10-slide thesis on agentic systems and software authorship:
+              models reason, agents act, and software becomes a medium far more
+              people can use to build.
             </p>
           </div>
         </section>
 
-        <nav class="slide-index" aria-label="Presentation slides">
-          <a href="#slide-01">01 Locked Medium</a>
-          <a href="#slide-02">02 Bottleneck</a>
-          <a href="#slide-03">03 Language</a>
-          <a href="#slide-04">04 Loop</a>
-          <a href="#slide-05">05 Environment</a>
-          <a href="#slide-06">06 Verification</a>
-          <a href="#slide-07">07 Proof Points</a>
-          <a href="#slide-08">08 Abundance</a>
-          <a href="#slide-09">09 Specification</a>
-          <a href="#slide-10">10 Authorship</a>
-        </nav>
-
-        <section class="slides" aria-label="Presentation slide details">
+        <section class="slides" aria-label="Presentation slides">
           <article class="slide" id="slide-01">
             <div class="slide-copy">
               <p class="slide-number">01</p>
-              <h2>Software Was the Locked Creative Medium</h2>
-              <p class="slide-kicker">Billions could use software. Very few could make it.</p>
+              <h2>The Model as a Reasoning Substrate</h2>
+              <p class="slide-kicker">
+                The shift was not autocomplete. It was reasoning over context.
+              </p>
               <p>
-                You could write, record, design, and publish without becoming a
-                specialist. Software usually demanded years of training and
-                abstraction tolerance, so most people could only consume it.
+                Large language models mattered because they could take context
+                and produce useful thought. Once that was true, the next step
+                was obvious: not just answering questions, but deciding what to
+                do next.
               </p>
             </div>
             <figure class="slide-media">
-              <picture>
-                <source srcset="/images/presentation/slide-07-windows-95-moment.webp" type="image/webp" />
-                <img
-                  src="/images/presentation/slide-07-windows-95-moment.webp"
-                  width="2752"
-                  height="1536"
-                  alt="A bedroom creator workspace that blends nostalgic personal computing with contemporary creative tools."
-                />
-              </picture>
+              <img
+                src="/images/presentation/slide-01-reasoning-engine.jpg"
+                alt="Editorial photograph of a researcher at a desk with notes and a laptop arranged to suggest structured machine reasoning."
+              />
             </figure>
           </article>
 
           <article class="slide slide-reverse" id="slide-02">
             <div class="slide-copy">
               <p class="slide-number">02</p>
-              <h2>The Bottleneck Was Implementation</h2>
-              <p class="slide-kicker">Ideas were cheap. Turning them into working systems was expensive.</p>
+              <h2>The Agentic Loop</h2>
+              <p class="slide-kicker">
+                Put that reasoning inside a loop and you get an agent.
+              </p>
               <p>
-                The old computer made software powerful but slow to author.
-                Even small tools required specialists, coordination, and
-                sustained attention across code, interfaces, data, and deployment.
+                The same model that answers can inspect results, update its
+                view, and choose the next move. Observe, decide, act, inspect,
+                repeat. That changed the model from interface to operator.
               </p>
             </div>
             <figure class="slide-media">
-              <picture>
-                <source srcset="/images/presentation/slide-05-outcomes.webp" type="image/webp" />
-                <img
-                  src="/images/presentation/slide-05-outcomes.webp"
-                  width="2752"
-                  height="1536"
-                  alt="Presentation illustration showing a product brief transforming into a working prototype through iterative checkpoints."
-                  loading="lazy"
-                />
-              </picture>
+              <img
+                src="/images/presentation/slide-02-agentic-loop.jpg"
+                alt="Concrete workspace showing a laptop, notebook, devices, and a mechanical workflow arranged as an iterative loop."
+                loading="lazy"
+              />
             </figure>
           </article>
 
           <article class="slide" id="slide-03">
             <div class="slide-copy">
               <p class="slide-number">03</p>
-              <h2>Models Made Language Operational</h2>
-              <p class="slide-kicker">The shift was not autocomplete. It was reasoning over context.</p>
+              <h2>Claude Code as the First Visceral Proof</h2>
+              <p class="slide-kicker">
+                Claude Code made the idea feel real.
+              </p>
               <p>
-                Large language models mattered because they could take context
-                and produce useful thought. Once that was true, language became
-                more than an interface. It became a way to specify work.
+                It let people watch an AI read a codebase, plan, edit, run,
+                fail, recover, and continue. Not because it invented every
+                ingredient, but because it made outcome-seeking behavior
+                visible.
               </p>
             </div>
             <figure class="slide-media">
-              <picture>
-                <source srcset="/images/presentation/slide-01-reasoning-engine.webp" type="image/webp" />
-                <img
-                  src="/images/presentation/slide-01-reasoning-engine.webp"
-                  width="2752"
-                  height="1536"
-                  alt="Editorial photograph of a researcher at a desk with notes and a laptop arranged to suggest structured machine reasoning."
-                  loading="lazy"
-                />
-              </picture>
+              <img
+                src="/images/presentation/slide-03-claude-code.png"
+                alt="Editorial desk scene with code, terminal output, and test feedback implying an autonomous coding agent at work."
+                loading="lazy"
+              />
             </figure>
           </article>
 
           <article class="slide slide-reverse" id="slide-04">
             <div class="slide-copy">
               <p class="slide-number">04</p>
-              <h2>Agents Turn Reasoning Into Work</h2>
-              <p class="slide-kicker">Put reasoning inside a loop and the model becomes an operator.</p>
-              <p>
-                The same model that answers can inspect results, update its
-                view, and choose the next move. Observe, decide, act, inspect,
-                repeat. That is the basic shape of agentic work.
+              <h2>The Environment Becomes the Surface Area</h2>
+              <p class="slide-kicker">
+                What matters is what the agent can touch.
               </p>
-            </div>
-            <figure class="slide-media">
-              <picture>
-                <source srcset="/images/presentation/slide-02-agentic-loop.webp" type="image/webp" />
-                <img
-                  src="/images/presentation/slide-02-agentic-loop.webp"
-                  width="2752"
-                  height="1536"
-                  alt="Concrete workspace showing a laptop, notebook, devices, and a mechanical workflow arranged as an iterative loop."
-                  loading="lazy"
-                />
-              </picture>
-            </figure>
-          </article>
-
-          <article class="slide" id="slide-05">
-            <div class="slide-copy">
-              <p class="slide-number">05</p>
-              <h2>The Environment Defines the Agent</h2>
-              <p class="slide-kicker">What matters is what the agent can touch.</p>
               <p>
                 A terminal, filesystem, browser, APIs, design tools, and
                 scheduling turn model ability into real leverage. The boundary
@@ -256,76 +134,92 @@
               </p>
             </div>
             <figure class="slide-media">
-              <picture>
-                <source srcset="/images/presentation/slide-04-environment.webp" type="image/webp" />
-                <img
-                  src="/images/presentation/slide-04-environment.webp"
-                  width="2752"
-                  height="1536"
-                  alt="Editorial desk setup with multiple screens showing a terminal, browser, file system, API dashboard, calendar, and design tool."
-                  loading="lazy"
-                />
-              </picture>
+              <img
+                src="/images/presentation/slide-04-environment.jpg"
+                alt="Editorial desk setup with multiple screens showing a terminal, browser, file system, API dashboard, calendar, and design tool."
+                loading="lazy"
+              />
+            </figure>
+          </article>
+
+          <article class="slide" id="slide-05">
+            <div class="slide-copy">
+              <p class="slide-number">05</p>
+              <h2>The Ralph Loop</h2>
+              <p class="slide-kicker">
+                Fresh context, persistent state, same goal until done.
+              </p>
+              <p>
+                Geoffrey Huntley described Ralph in the simplest possible way:
+                a bash loop. Restart the agent, let the repo hold the state,
+                and stop only when real checks pass. It belongs here because it
+                showed that outcome-seeking behavior did not require a complex
+                framework. A loop, external memory, and clear exit conditions
+                were enough.
+              </p>
+            </div>
+            <figure class="slide-media">
+              <img
+                src="/images/presentation/slide-05-outcomes.png"
+                alt="Presentation illustration showing a product brief transforming into a working prototype through iterative checkpoints."
+                loading="lazy"
+              />
             </figure>
           </article>
 
           <article class="slide slide-reverse" id="slide-06">
             <div class="slide-copy">
               <p class="slide-number">06</p>
-              <h2>Verification Becomes the Trust Layer</h2>
-              <p class="slide-kicker">The system, not the transcript, holds the truth.</p>
+              <h2>OpenClaw and the Move Beyond the Coding Box</h2>
+              <p class="slide-kicker">
+                OpenClaw asks what happens when the agent leaves the coding box.
+              </p>
               <p>
-                Agents make more work possible, but checks make the work
-                usable. Tests, logs, screenshots, type systems, deployments,
-                and user experience become the backpressure that keeps the loop honest.
+                Add background jobs, memory, scheduling, dynamic tools, and
+                long-running workflows, and the agent stops looking like a
+                coding assistant. It becomes a general-purpose computational
+                actor.
               </p>
             </div>
             <figure class="slide-media">
-              <picture>
-                <source srcset="/images/presentation/slide-03-claude-code.webp" type="image/webp" />
-                <img
-                  src="/images/presentation/slide-03-claude-code.webp"
-                  width="2752"
-                  height="1536"
-                  alt="Editorial desk scene with code, terminal output, and test feedback implying an autonomous coding agent at work."
-                  loading="lazy"
-                />
-              </picture>
+              <img
+                src="/images/presentation/slide-06-openclaw.jpg"
+                alt="Operations-style workspace with monitors showing schedulers, jobs, memory, APIs, and communications tools."
+                loading="lazy"
+              />
             </figure>
           </article>
 
           <article class="slide" id="slide-07">
             <div class="slide-copy">
               <p class="slide-number">07</p>
-              <h2>Coding Agents Made the Shift Visible</h2>
-              <p class="slide-kicker">Claude Code, Ralph, and OpenClaw are proof points, not prerequisites.</p>
+              <h2>The Broken Asymmetry of the Old Computer</h2>
+              <p class="slide-kicker">
+                Software was the one major creative medium most people could not touch.
+              </p>
               <p>
-                Claude Code showed agents reading, editing, running, failing,
-                and recovering inside real codebases. Ralph stripped the idea
-                down to a loop: fresh context, repo as memory, one next task,
-                real checks, repeat. OpenClaw asks what happens when that
-                pattern leaves the coding box.
+                You could write, record, design, and publish without becoming a
+                specialist. Software usually demanded years of training and
+                abstraction tolerance. Billions could use it. Very few could
+                make it.
               </p>
             </div>
             <figure class="slide-media">
-              <picture>
-                <source srcset="/images/presentation/slide-06-openclaw.webp" type="image/webp" />
-                <img
-                  src="/images/presentation/slide-06-openclaw.webp"
-                  width="2752"
-                  height="1536"
-                  alt="Operations-style workspace with monitors showing schedulers, jobs, memory, APIs, and communications tools."
-                  loading="lazy"
-                />
-              </picture>
+              <img
+                src="/images/presentation/slide-07-windows-95-moment.png"
+                alt="A bedroom creator workspace that blends nostalgic personal computing with contemporary creative tools."
+                loading="lazy"
+              />
             </figure>
           </article>
 
           <article class="slide slide-reverse" id="slide-08">
             <div class="slide-copy">
               <p class="slide-number">08</p>
-              <h2>Software Becomes Abundant</h2>
-              <p class="slide-kicker">The payoff is not only niche personalization.</p>
+              <h2>Software Becomes a Creative Medium</h2>
+              <p class="slide-kicker">
+                The payoff is abundance, not just niche personalization.
+              </p>
               <p>
                 Agents make one-off tools viable. They also make breakout
                 products, high-utility apps, and fast copycat waves easier to
@@ -333,16 +227,11 @@
               </p>
             </div>
             <figure class="slide-media">
-              <picture>
-                <source srcset="/images/presentation/slide-08-software-medium.webp" type="image/webp" />
-                <img
-                  src="/images/presentation/slide-08-software-medium.webp"
-                  width="2752"
-                  height="1536"
-                  alt="Editorial illustration of ordinary people turning ideas into polished software products and experimental applications."
-                  loading="lazy"
-                />
-              </picture>
+              <img
+                src="/images/presentation/slide-08-software-medium.png"
+                alt="Editorial illustration of ordinary people turning ideas into polished software products and experimental applications."
+                loading="lazy"
+              />
             </figure>
           </article>
 
@@ -350,7 +239,9 @@
             <div class="slide-copy">
               <p class="slide-number">09</p>
               <h2>The New Literacy Is Specification</h2>
-              <p class="slide-kicker">The new literacy is specification.</p>
+              <p class="slide-kicker">
+                The new literacy is specification.
+              </p>
               <p>
                 Natural language lowers the interface barrier, but rigor still
                 matters. The skill is stating intent, setting constraints,
@@ -358,24 +249,21 @@
               </p>
             </div>
             <figure class="slide-media">
-              <picture>
-                <source srcset="/images/presentation/slide-09-new-literacy.webp" type="image/webp" />
-                <img
-                  src="/images/presentation/slide-09-new-literacy.webp"
-                  width="2752"
-                  height="1536"
-                  alt="A calm editorial scene of a person refining software through dialogue, drafts, diagrams, and constraints."
-                  loading="lazy"
-                />
-              </picture>
+              <img
+                src="/images/presentation/slide-09-new-literacy.png"
+                alt="A calm editorial scene of a person refining software through dialogue, drafts, diagrams, and constraints."
+                loading="lazy"
+              />
             </figure>
           </article>
 
           <article class="slide slide-reverse" id="slide-10">
             <div class="slide-copy">
               <p class="slide-number">10</p>
-              <h2>The New Computer Expands Authorship</h2>
-              <p class="slide-kicker">Automation is the first story. Authorship is the bigger one.</p>
+              <h2>The Platform Shift Is Authorship at Scale</h2>
+              <p class="slide-kicker">
+                Automation is the first story. Authorship is the bigger one.
+              </p>
               <p>
                 When software gets cheaper to make, the frontier is not only
                 efficiency. It is expression: one-person tools, serious
@@ -384,16 +272,11 @@
               </p>
             </div>
             <figure class="slide-media">
-              <picture>
-                <source srcset="/images/presentation/slide-10-authorship.webp" type="image/webp" />
-                <img
-                  src="/images/presentation/slide-10-authorship.webp"
-                  width="2752"
-                  height="1536"
-                  alt="Independent creators in small studios building different kinds of software products across multiple screens."
-                  loading="lazy"
-                />
-              </picture>
+              <img
+                src="/images/presentation/slide-10-authorship.jpg"
+                alt="Independent creators in small studios building different kinds of software products across multiple screens."
+                loading="lazy"
+              />
             </figure>
           </article>
         </section>
