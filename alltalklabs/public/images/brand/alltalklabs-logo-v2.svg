@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 80" role="img" aria-labelledby="title desc">
+  <title id="title">All Talk Labs logo</title>
+  <desc id="desc">All Talk Labs wordmark with a mark showing speech becoming artifacts.</desc>
+  <rect x="4" y="8" width="64" height="64" rx="16" fill="#20241f"/>
+  <g transform="translate(12 16)">
+    <g fill="none" stroke="#9fca82" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 25h4.7c2.1 0 1.9-6.4 4.1-6.4 2.5 0 2.2 12.8 4.8 12.8 3 0 2.7-19.7 5.7-19.7 2.6 0 2.3 13.3 5 13.3h1.4" stroke-width="2.65"/>
+      <path d="M31 10.8a13.2 13.2 0 0 1 0 26.4" stroke-width="2.65"/>
+    </g>
+    <g fill="#9fca82">
+      <rect x="34.6" y="15.6" width="5.2" height="5.2" rx="1.15"/>
+      <rect x="38.2" y="22" width="5.2" height="5.2" rx="1.15"/>
+      <rect x="34.6" y="28.4" width="5.2" height="5.2" rx="1.15"/>
+    </g>
+  </g>
+  <text x="88" y="50" fill="#171a16" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing=".5">All Talk Labs</text>
+</svg>

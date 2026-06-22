@@ -1,11 +1,14 @@
-const COVER_IDS = new Set(["", "cover", "home"]);
+const COVER_IDS = new Set(["", "cover", "home", "lab-notes"]);
 const PRESENTATION_IDS = new Set(["presentation"]);
 
+function normalizedHash() {
+  return window.location.hash.replace(/^#/, "");
+}
+
 function panelForHash(hash) {
-  const normalized = hash.replace(/^#/, "");
-  if (COVER_IDS.has(normalized)) return "cover";
-  if (PRESENTATION_IDS.has(normalized)) return "presentation";
-  if (normalized.startsWith("slide-")) return "presentation";
+  if (COVER_IDS.has(hash)) return "cover";
+  if (PRESENTATION_IDS.has(hash)) return "presentation";
+  if (hash.startsWith("slide-")) return "presentation";
   return "cover";
 }
 
@@ -23,10 +26,24 @@ function updatePanels(activePanel) {
   });
 }
 
+function scrollToHashTarget(hash) {
+  if (!hash || hash === "cover" || hash === "presentation") return;
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      const target = document.getElementById(hash);
+      if (!target) return;
+      target.scrollIntoView({ block: "start", behavior: "auto" });
+    });
+  });
+}
+
 function syncFromHash() {
-  const activePanel = panelForHash(window.location.hash);
+  const hash = normalizedHash();
+  const activePanel = panelForHash(hash);
   updateTabs(activePanel);
   updatePanels(activePanel);
+  scrollToHashTarget(hash);
 }
 
 window.addEventListener("hashchange", syncFromHash);
